@@ -162,28 +162,24 @@ header {
     }
 }
 
+.showcase {
+    background-color: #F0EFE9;
+    .container {
+        display: flex;
+        justify-content: center;
 
-// }
+        .child {
+            display: flex;
+            flex: 1;
+        }
 
-//  {
-//     background-color: #F0EFE9;
+        #header-slogan {
+            font-family: 'DM sans', 'sans-serif';
+        }
 
-//     .parent {
-//         display: flex;
-//         justify-content: center;
-
-//         .child {
-//             display: flex;
-//             flex: 1;
-//         }
-
-//         #header-slogan {
-//             font-family: 'DM sans', 'sans-serif';
-//         }
-
-//         #header-img {
-//             height: 600px;
-//             align-items: end;
-//         }
-//     }
-// }
+        #header-img {
+            height: 600px;
+            align-items: end;
+        }
+    }
+}

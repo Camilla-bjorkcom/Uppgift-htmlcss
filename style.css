@@ -138,3 +138,22 @@ header .container .menu .main-menu button {
 header .container .menu .main-menu button:hover {
   background-color: #f4e4bc;
 }
+
+.showcase {
+  background-color: #F0EFE9;
+}
+.showcase .container {
+  display: flex;
+  justify-content: center;
+}
+.showcase .container .child {
+  display: flex;
+  flex: 1;
+}
+.showcase .container #header-slogan {
+  font-family: "DM sans", "sans-serif";
+}
+.showcase .container #header-img {
+  height: 600px;
+  align-items: end;
+}
