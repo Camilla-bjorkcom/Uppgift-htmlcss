@@ -141,19 +141,117 @@ header .container .menu .main-menu button:hover {
 
 .showcase {
   background-color: #F0EFE9;
+  padding-top: 100px;
 }
 .showcase .container {
   display: flex;
   justify-content: center;
 }
-.showcase .container .child {
-  display: flex;
-  flex: 1;
+.showcase .container .content {
+  display: inline-block;
 }
-.showcase .container #header-slogan {
+.showcase .container .content .slogan {
   font-family: "DM sans", "sans-serif";
+  font-size: 30px;
+  text-align: center;
 }
-.showcase .container #header-img {
-  height: 600px;
+@media (min-width: 500px) {
+  .showcase .container .content .slogan {
+    font-size: 50px;
+  }
+}
+@media (min-width: 1200px) {
+  .showcase .container .content .slogan {
+    text-align: start;
+    font-size: 90px;
+  }
+}
+.showcase .container .content .text {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  opacity: 70%;
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  .showcase .container .content .text {
+    text-align: start;
+  }
+}
+.showcase .container .content .btn-yellow {
+  background-color: #F9D783;
+  width: 300px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media (min-width: 500px) {
+  .showcase .container .content .btn-yellow {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .showcase .container .content .btn-yellow {
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 50px;
+    margin-left: 0px;
+    display: inline-block;
+    margin-right: 30px;
+  }
+}
+.showcase .container .content .btn-yellow i {
+  margin-left: 10px;
+}
+.showcase .container .content .btn-yellow:hover {
+  background-color: #f4e4bc;
+}
+.showcase .container .content .btn-outline {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+@media (min-width: 500px) {
+  .showcase .container .content .btn-outline {
+    width: 500px;
+  }
+}
+@media (min-width: 1200px) {
+  .showcase .container .content .btn-outline {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    margin-left: 0px;
+    display: inline-block;
+  }
+}
+.showcase .container .content .btn-outline i {
+  margin-left: 10px;
+}
+.showcase .container .content .btn-outline:hover {
+  background-color: #e3e3e3;
+  color: #191919;
+}
+.showcase .container .img {
+  display: none;
   align-items: end;
+  margin-right: -50px;
+}
+@media (min-width: 1200px) {
+  .showcase .container .img {
+    display: block;
+  }
 }
