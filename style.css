@@ -1,11 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,900&family=Inter:wght@300;400;500;600;700&display=swap");
-.btn-yellow html,
+html,
 body {
-  height: 100%;
+  height: 100vh;
   color: #191919;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", "sans-serif";
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
+}
+
+.section-title {
+  margin-top: 120px;
+  margin-bottom: 90px;
+}
+.section-title p {
+  color: #F94D1C;
+  font-size: 18px;
+  font-weight: 400;
+}
+.section-title h2 {
+  font-family: "DM sans", "Sans Serif";
+  font-size: 45px;
+  color: #191919;
+  font-weight: 700;
 }
 
 header {
@@ -142,6 +159,7 @@ header .container .menu .main-menu button:hover {
 .showcase {
   background-color: #F0EFE9;
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 .showcase .container {
   display: flex;
@@ -150,35 +168,39 @@ header .container .menu .main-menu button:hover {
 .showcase .container .content {
   display: inline-block;
 }
-.showcase .container .content .slogan {
+.showcase .container .content .slogan-showcase h1 {
   font-family: "DM sans", "sans-serif";
   font-size: 30px;
   text-align: center;
 }
 @media (min-width: 500px) {
-  .showcase .container .content .slogan {
+  .showcase .container .content .slogan-showcase h1 {
     font-size: 50px;
   }
 }
 @media (min-width: 1200px) {
-  .showcase .container .content .slogan {
+  .showcase .container .content .slogan-showcase h1 {
     text-align: start;
     font-size: 90px;
   }
 }
-.showcase .container .content .text {
+.showcase .container .content .slogan-showcase p {
   margin-top: 20px;
   margin-bottom: 25px;
   font-size: 20px;
   opacity: 70%;
   text-align: center;
 }
-@media (min-width: 1400px) {
-  .showcase .container .content .text {
+@media (min-width: 1200px) {
+  .showcase .container .content .slogan-showcase p {
     text-align: start;
   }
 }
-.showcase .container .content .btn-yellow {
+.showcase .container .content .buttons-showcase {
+  display: inline-block;
+  text-align: center;
+}
+.showcase .container .content .buttons-showcase .btn-yellow {
   background-color: #F9D783;
   width: 300px;
   height: 50px;
@@ -186,72 +208,187 @@ header .container .menu .main-menu button:hover {
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
 @media (min-width: 500px) {
-  .showcase .container .content .btn-yellow {
+  .showcase .container .content .buttons-showcase .btn-yellow {
     width: 500px;
   }
 }
 @media (min-width: 1200px) {
-  .showcase .container .content .btn-yellow {
+  .showcase .container .content .buttons-showcase .btn-yellow {
     width: 200px;
     height: 50px;
     border: none;
     border-radius: 50px;
     margin-left: 0px;
-    display: inline-block;
     margin-right: 30px;
+    text-align: center;
   }
 }
-.showcase .container .content .btn-yellow i {
+.showcase .container .content .buttons-showcase .btn-yellow i {
   margin-left: 10px;
 }
-.showcase .container .content .btn-yellow:hover {
+.showcase .container .content .buttons-showcase .btn-yellow:hover {
   background-color: #f4e4bc;
 }
-.showcase .container .content .btn-outline {
+.showcase .container .content .buttons-showcase .btn-outline {
   width: 300px;
   height: 50px;
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
 }
 @media (min-width: 500px) {
-  .showcase .container .content .btn-outline {
+  .showcase .container .content .buttons-showcase .btn-outline {
     width: 500px;
   }
 }
 @media (min-width: 1200px) {
-  .showcase .container .content .btn-outline {
+  .showcase .container .content .buttons-showcase .btn-outline {
     width: 200px;
     height: 50px;
     border-radius: 50px;
     margin-left: 0px;
-    display: inline-block;
+    text-align: center;
   }
 }
-.showcase .container .content .btn-outline i {
+.showcase .container .content .buttons-showcase .btn-outline i {
   margin-left: 10px;
 }
-.showcase .container .content .btn-outline:hover {
+.showcase .container .content .buttons-showcase .btn-outline:hover {
   background-color: #e3e3e3;
   color: #191919;
 }
-.showcase .container .img {
+.showcase .container img {
   display: none;
   align-items: end;
   margin-right: -50px;
 }
 @media (min-width: 1200px) {
-  .showcase .container .img {
+  .showcase .container img {
     display: block;
   }
+}
+
+.brands .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.brands .container img {
+  height: auto;
+  width: auto;
+}
+@media (min-width: 800px) {
+  .brands .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .brands .container img {
+    padding-top: 30px;
+    height: auto;
+    width: auto;
+  }
+}
+@media (min-width: 1300px) {
+  .brands .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .brands .container img {
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+.projectandcase .container .section-title {
+  text-align: center;
+}
+.projectandcase .container .projects {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .projectandcase .container .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.projectandcase .container .projects article {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.projectandcase .container .projects article img {
+  width: 100%;
+  height: auto;
+}
+.projectandcase .container .projects article h3 {
+  font-family: "DM sans", "sans-serif";
+  font-size: 22px;
+  padding-top: 35px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #DAD9D3;
+}
+.projectandcase .container .projects article a {
+  padding: 15px;
+  display: block;
+  text-align: right;
+  font-family: "Inter", "sans-serif";
+  font-size: 14px;
+  font-weight: 500;
+  color: #191919;
+  text-decoration: none;
+}
+.projectandcase .container .projects article a:hover {
+  text-decoration: underline;
+}
+.projectandcase .container .projects article a i {
+  margin-left: 3px;
+}
+.projectandcase .container .btn-dark {
+  font-size: 16px;
+  color: white;
+  width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 400;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.projectandcase .container .btn-dark:hover {
+  background-color: #535353;
+}
+.projectandcase .container .btn-dark i {
+  margin-left: 10px;
+}
+
+.features .container {
+  max-width: 1520px;
+  border: 1.5px solid #DAD9D3;
+}
+.features .container .section-title {
+  display: flex;
+  flex-direction: column;
+}
+.features .container .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
