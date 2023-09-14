@@ -289,25 +289,26 @@ header .container .menu .main-menu button:hover {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1300px) {
+  .brands .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .brands .container img {
   height: auto;
   width: auto;
+  margin: auto;
 }
-@media (min-width: 800px) {
-  .brands .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    height: -moz-fit-content;
-    height: fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+@media (min-width: 1300px) {
   .brands .container img {
-    padding-top: 30px;
-    height: auto;
-    width: auto;
+    padding: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media (min-width: 1300px) {
@@ -326,18 +327,41 @@ header .container .menu .main-menu button:hover {
 .features .container {
   max-width: 1520px;
   border: 1.5px solid #DAD9D3;
-  display: flex;
-  justify-content: center;
+}
+@media (min-width: 1200px) {
+  .features .container {
+    display: flex;
+    justify-content: center;
+  }
 }
 .features .container .section-title {
-  padding-left: 100px;
-  margin-bottom: 216px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 1200px) {
+  .features .container .section-title {
+    display: inline-block;
+    text-align: left;
+    padding-left: 50px;
+    margin-right: 50px;
+  }
 }
 .features .container .section-title p {
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .features .container .section-title p {
+    text-align: left;
+  }
 }
 .features .container .section-title h2 {
-  text-align: left;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .features .container .section-title h2 {
+    text-align: left;
+  }
 }
 .features .container .section-title .btn-yellow {
   background-color: #F9D783;
@@ -373,18 +397,36 @@ header .container .menu .main-menu button:hover {
 .features .container .section-title .btn-yellow:hover {
   background-color: #f4e4bc;
 }
-.features .container .grid {
-  -moz-column-gap: 70px;
-       column-gap: 70px;
-  padding-right: 280px;
-  padding-top: 100px;
-  padding-left: 100px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+.features .container .grid-features {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-.features .container .grid .informative-text i {
+@media (min-width: 1200px) {
+  .features .container .grid-features {
+    -moz-column-gap: 110px;
+         column-gap: 110px;
+    margin-right: 150px;
+    padding-top: 100px;
+    padding-left: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+.features .container .grid-features .informative-text {
+  margin: auto;
+  margin-bottom: 50px;
+}
+.features .container .grid-features .informative-text i {
   text-align: left;
+  font-size: 30px;
+}
+.features .container .grid-features .informative-text h3 {
+  margin-top: 30px;
+}
+.features .container .grid-features .informative-text p {
+  font-weight: 400;
 }
 
 .projectandcase .container .section-title {
