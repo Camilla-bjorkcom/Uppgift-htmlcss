@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,900&family=Inter:wght@300;400;500;600;700&display=swap");
 html,
 body {
-  height: 100vh;
+  height: 100%;
   color: #191919;
   font-family: "Inter", "sans-serif";
   font-size: 16px;
@@ -121,7 +121,7 @@ header .container .menu .main-menu {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1000px) {
   header .container .menu .main-menu {
     justify-content: space-between;
   }
@@ -189,7 +189,12 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 1200px) {
   .showcase .container .content .slogan-showcase h1 {
-    text-align: start;
+    font-size: 90px;
+  }
+}
+@media (min-width: 1400px) {
+  .showcase .container .content .slogan-showcase h1 {
+    text-align: left;
     font-size: 90px;
   }
 }
@@ -200,14 +205,15 @@ header .container .menu .main-menu button:hover {
   opacity: 70%;
   text-align: center;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .showcase .container .content .slogan-showcase p {
-    text-align: start;
+    text-align: left;
   }
 }
 .showcase .container .content .buttons-showcase {
   display: inline-block;
   text-align: center;
+  margin-bottom: 50px;
 }
 .showcase .container .content .buttons-showcase .btn-yellow {
   background-color: #F9D783;
@@ -228,13 +234,15 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 1200px) {
   .showcase .container .content .buttons-showcase .btn-yellow {
-    width: 200px;
-    height: 50px;
-    border: none;
-    border-radius: 50px;
     margin-left: 0px;
     margin-right: 30px;
     text-align: center;
+  }
+}
+@media (min-width: 1300px) {
+  .showcase .container .content .buttons-showcase .btn-yellow {
+    width: 200px;
+    height: 50px;
   }
 }
 .showcase .container .content .buttons-showcase .btn-yellow i {
@@ -260,11 +268,14 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 1200px) {
   .showcase .container .content .buttons-showcase .btn-outline {
+    margin-left: 0px;
+    justify-content: center;
+  }
+}
+@media (min-width: 1300px) {
+  .showcase .container .content .buttons-showcase .btn-outline {
     width: 200px;
     height: 50px;
-    border-radius: 50px;
-    margin-left: 0px;
-    text-align: center;
   }
 }
 .showcase .container .content .buttons-showcase .btn-outline i {
@@ -279,7 +290,7 @@ header .container .menu .main-menu button:hover {
   align-items: end;
   margin-right: -50px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1300px) {
   .showcase .container img {
     display: block;
   }
