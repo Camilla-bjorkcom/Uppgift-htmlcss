@@ -2,6 +2,7 @@
 html,
 body {
   height: 100%;
+  width: 100vw;
   color: #191919;
   font-family: "Inter", "sans-serif";
   font-size: 16px;
@@ -45,11 +46,6 @@ header .container {
   height: min-content;
   align-items: center;
   justify-content: space-between;
-}
-@media (min-width: 768px) {
-  header .container {
-    background-color: #F0EFE9;
-  }
 }
 header .container .menu-bars {
   font-size: 25px;
@@ -229,7 +225,7 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 500px) {
   .showcase .container .content .buttons-showcase .btn-yellow {
-    width: 500px;
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -263,7 +259,7 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 500px) {
   .showcase .container .content .buttons-showcase .btn-outline {
-    width: 500px;
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -298,10 +294,19 @@ header .container .menu .main-menu button:hover {
 
 .brands .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   padding-top: 40px;
   padding-bottom: 40px;
+}
+@media (min-width: 500px) {
+  .brands .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 @media (min-width: 1300px) {
   .brands .container {
@@ -388,7 +393,7 @@ header .container .menu .main-menu button:hover {
 }
 @media (min-width: 500px) {
   .features .container .section-title .btn-yellow {
-    width: 500px;
+    max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
