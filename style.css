@@ -591,6 +591,36 @@ header .container .menu .main-menu button:hover {
   margin-left: 20px;
 }
 
+.our-services {
+  background-color: #F0EFE9;
+  position: relative;
+}
+.our-services .background-lines-right {
+  position: absolute;
+}
+.our-services .container .boxes {
+  background-color: #6b3232;
+  display: flex;
+  justify-content: space-around;
+}
+.our-services .container .boxes .box {
+  background-color: #BEEBFF;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-services .container .boxes .box h3 {
+  font-family: "DM sans", "sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+}
+.our-services .container .boxes .box p {
+  font-family: "inter", "sans-serif";
+  font-size: 16px;
+}
+.our-services .container .boxes .active {
+  background-color: #F9D783;
+}
+
 .projectandcase .container .section-title {
   text-align: center;
 }
@@ -682,7 +712,7 @@ header .container .menu .main-menu button:hover {
   outline: none;
   border: 1px solid #DAD9D3;
   margin-right: 20px;
-  font-family: "inter" "sans-serif";
+  font-family: "inter", "sans-serif";
   font-size: 16px;
   text-decoration: none;
   color: #191919;
