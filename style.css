@@ -599,14 +599,12 @@ header .container .menu .main-menu button:hover {
   position: absolute;
 }
 .our-services .container .boxes {
-  background-color: #6b3232;
   display: flex;
-  justify-content: space-around;
 }
 .our-services .container .boxes .box {
   background-color: #BEEBFF;
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 90px 30px;
+  margin-right: 20px;
 }
 .our-services .container .boxes .box h3 {
   font-family: "DM sans", "sans-serif";
