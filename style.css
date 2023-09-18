@@ -597,9 +597,12 @@ header .container .menu .main-menu button:hover {
 }
 .our-services .background-lines-right {
   position: absolute;
+  right: 0;
+  bottom: 0;
 }
 .our-services .container .boxes {
   display: flex;
+  justify-content: space-between;
 }
 .our-services .container .boxes .box {
   background-color: #BEEBFF;

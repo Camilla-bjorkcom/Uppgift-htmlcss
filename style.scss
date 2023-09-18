@@ -669,12 +669,14 @@ header {
 
     .background-lines-right {
         position: absolute;
+        right:0;
+        bottom: 0;
     }
 
     .container {
         .boxes {
             display: flex;
-
+            justify-content: space-between;
 
             .box {
                 background-color: #BEEBFF;
