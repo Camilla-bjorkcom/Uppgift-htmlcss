@@ -245,7 +245,7 @@ header .container .menu .main-menu button:hover {
     font-size: 90px;
   }
 }
-@media (min-width: 1400px) {
+@media (min-width: 1500px) {
   .showcase .container .content .slogan-showcase h1 {
     text-align: left;
     font-size: 90px;
@@ -258,7 +258,7 @@ header .container .menu .main-menu button:hover {
   opacity: 70%;
   text-align: center;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1450px) {
   .showcase .container .content .slogan-showcase p {
     text-align: left;
   }
@@ -266,6 +266,12 @@ header .container .menu .main-menu button:hover {
 .showcase .container .content .buttons-showcase {
   text-align: center;
   margin-bottom: 50px;
+  margin-top: 50px;
+}
+@media (min-width: 1450px) {
+  .showcase .container .content .buttons-showcase {
+    text-align: left;
+  }
 }
 .showcase .container .content .buttons-showcase .btn-yellow {
   background-color: #F9D783;
@@ -275,9 +281,6 @@ header .container .menu .main-menu button:hover {
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
 }
 @media (min-width: 500px) {
   .showcase .container .content .buttons-showcase .btn-yellow {
@@ -309,9 +312,6 @@ header .container .menu .main-menu button:hover {
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
 }
 @media (min-width: 500px) {
   .showcase .container .content .buttons-showcase .btn-outline {
@@ -397,7 +397,6 @@ header .container .menu .main-menu button:hover {
 }
 
 .features .container {
-  max-width: 1520px;
   border: 1.5px solid #DAD9D3;
 }
 @media (min-width: 1200px) {

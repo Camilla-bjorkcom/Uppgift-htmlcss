@@ -276,7 +276,7 @@ header {
                         font-size: 90px;
                     }
 
-                    @media (min-width: 1400px) {
+                    @media (min-width: 1500px) {
                         text-align: left;
                         font-size: 90px;
                     }
@@ -290,7 +290,7 @@ header {
                     opacity: 70%;
                     text-align: center;
 
-                    @media (min-width: 1400px) {
+                    @media (min-width: 1450px) {
                         text-align: left;
                     }
                 }
@@ -299,6 +299,11 @@ header {
             .buttons-showcase {
                 text-align: center;
                 margin-bottom: 50px;
+                margin-top: 50px;
+
+                @media (min-width: 1450px) {
+                   text-align: left;
+                }
 
                 .btn-yellow {
                     background-color: #F9D783;
@@ -308,9 +313,7 @@ header {
                     border-radius: 50px;
                     font-weight: 400;
                     font-size: 16px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 20px;
+
 
                     @media (min-width:500px) {
                         max-width: 400px;
@@ -342,9 +345,6 @@ header {
                     border-radius: 50px;
                     font-weight: 400;
                     font-size: 16px;
-                    margin-left: auto;
-                    margin-right: auto;
-                    margin-top: 20px;
 
                     @media (min-width:500px) {
                         max-width: 400px;
@@ -440,7 +440,6 @@ header {
 
 .features {
     .container {
-        max-width: 1520px;
         border: 1.5px solid #DAD9D3;
 
         @media (min-width: 1200px) {
