@@ -2,7 +2,6 @@
 html,
 body {
   height: 100%;
-  width: 100vw;
   color: #191919;
   font-family: "Inter", "sans-serif";
   font-size: 16px;
@@ -218,6 +217,7 @@ header .container .menu .main-menu button:hover {
   z-index: 0;
 }
 .showcase .background-lines {
+  max-width: 100vw;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -506,6 +506,7 @@ header .container .menu .main-menu button:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 @media (min-width: 1400px) {
   .aboutcompany .container {
@@ -529,6 +530,7 @@ header .container .menu .main-menu button:hover {
   justify-content: center;
 }
 .aboutcompany .container .left-img div img {
+  height: 615px;
   max-width: 500px;
 }
 .aboutcompany .container .left-img .informative-text {
@@ -546,7 +548,7 @@ header .container .menu .main-menu button:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    bottom: 280px;
+    bottom: 50px;
     left: -50px;
     width: 340px;
     height: 180px;
@@ -847,4 +849,9 @@ header .container .menu .main-menu button:hover {
   font-size: 16px;
   text-decoration: none;
   color: #191919;
+}
+@media (min-width: 500px) {
+  .newsletter .container form .btn-yellowa {
+    max-width: px;
+  }
 }
