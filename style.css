@@ -524,22 +524,32 @@ header .container .menu .main-menu button:hover {
     display: block;
   }
 }
+.aboutcompany .container .left-img div {
+  display: flex;
+  justify-content: center;
+}
 .aboutcompany .container .left-img div img {
   max-width: 500px;
 }
 .aboutcompany .container .left-img .informative-text {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline;
   position: absolute;
-  gap: 5px;
-  bottom: 90px;
-  left: -50px;
+  bottom: 0px;
+  left: 355px;
   background-color: #BEEBFF;
+  margin: auto;
+  max-width: 400px;
   padding: 30px;
   align-items: center;
 }
 @media (min-width: 1400px) {
   .aboutcompany .container .left-img .informative-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    bottom: 280px;
+    left: -50px;
     width: 340px;
     height: 180px;
   }
@@ -548,22 +558,40 @@ header .container .menu .main-menu button:hover {
   color: #F94D1C;
 }
 .aboutcompany .container .section-title {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  margin-left: 100px;
-  padding-left: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+  padding: 50px;
 }
-.aboutcompany .container .section-title h2 {
-  padding-right: 120px;
-  margin-top: 20px;
+@media (min-width: 1400px) {
+  .aboutcompany .container .section-title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 100px;
+    padding-left: 70px;
+  }
+}
+@media (min-width: 1400px) {
+  .aboutcompany .container .section-title h2 {
+    padding-right: 120px;
+    margin-top: 20px;
+  }
 }
 .aboutcompany .container .section-title p {
-  padding-right: 50px;
-  margin-top: 30px;
   opacity: 70%;
+}
+@media (min-width: 1400px) {
+  .aboutcompany .container .section-title p {
+    padding-right: 50px;
+    margin-top: 30px;
+  }
 }
 .aboutcompany .container .section-title .about-btn {
   display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: auto;
   margin-top: 120px;
 }
 .aboutcompany .container .section-title .about-btn .btn-dark {
@@ -597,19 +625,17 @@ header .container .menu .main-menu button:hover {
 .aboutcompany .container .section-title .about-btn .btn-dark i {
   margin-left: 10px;
 }
-.aboutcompany .container .section-title .about-btn .btn-dark:hover {
-  background-color: transparent;
-  border: 1px solid #191919;
-  color: #191919;
-}
 .aboutcompany .container .section-title .about-btn .round-button:hover {
   background-color: #191919;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
-.aboutcompany .container .section-title .about-btn p {
-  margin: auto;
-  margin-left: 20px;
+.aboutcompany .container .section-title .about-btn a {
+  color: #191919;
+  text-decoration: none;
+}
+.aboutcompany .container .section-title .about-btn a:hover {
+  color: #bebebe;
 }
 
 .our-services {
