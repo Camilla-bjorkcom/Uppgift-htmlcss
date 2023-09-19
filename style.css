@@ -572,6 +572,14 @@ header .container .menu .main-menu button:hover {
     padding-left: 70px;
   }
 }
+.aboutcompany .container .section-title h2 {
+  font-size: 22px;
+}
+@media (min-width: 500px) {
+  .aboutcompany .container .section-title h2 {
+    font-size: 45px;
+  }
+}
 @media (min-width: 1400px) {
   .aboutcompany .container .section-title h2 {
     padding-right: 120px;
@@ -649,11 +657,10 @@ header .container .menu .main-menu button:hover {
   bottom: 0;
 }
 .our-services .container {
-  margin: auto;
+  display: block;
 }
 .our-services .container .boxes {
   display: flex;
-  justify-content: space-between;
 }
 .our-services .container .boxes .box {
   background-color: #FFFFFF;
@@ -695,30 +702,33 @@ header .container .menu .main-menu button:hover {
 .our-services .container .boxes .active-box {
   background-color: #F9D783;
 }
-.our-services .container .btn-outline {
+.our-services .container .btn-parent {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.our-services .container .btn-parent .btn-outline {
   width: 300px;
   height: 50px;
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
   margin-top: 35px;
-  margin-left: auto;
 }
 @media (min-width: 500px) {
-  .our-services .container .btn-outline {
+  .our-services .container .btn-parent .btn-outline {
     max-width: 400px;
   }
 }
 @media (min-width: 1300px) {
-  .our-services .container .btn-outline {
+  .our-services .container .btn-parent .btn-outline {
     width: 200px;
     height: 50px;
   }
 }
-.our-services .container .btn-outline i {
+.our-services .container .btn-parent .btn-outline i {
   margin-left: 10px;
 }
-.our-services .container .btn-outline:hover {
+.our-services .container .btn-parent .btn-outline:hover {
   background-color: #e3e3e3;
   color: #191919;
 }

@@ -628,6 +628,12 @@ header {
 
 
             h2 {
+                font-size: 22px;
+
+                @media (min-width: 500px) {
+                    font-size: 45px;
+                }
+
                 @media (min-width: 1400px) {
                     padding-right: 120px;
                     margin-top: 20px;
@@ -683,8 +689,6 @@ header {
 
                 }
 
-
-
                 .round-button {
                     &:hover {
                         background-color: #191919;
@@ -692,11 +696,11 @@ header {
                         color: #ffffff;
                     }
                 }
-                
+
                 a {
                     color: #191919;
                     text-decoration: none;
-                    
+
                     &:hover {
                         color: #bebebe;
                     }
@@ -721,11 +725,12 @@ header {
     }
 
     .container {
-        margin: auto;
+        display: block;
+        // flex-direction: column;
+        // justify-content: center;
 
         .boxes {
             display: flex;
-            justify-content: space-between;
 
             .box {
                 background-color: #FFFFFF;
@@ -764,7 +769,6 @@ header {
                     }
                 }
 
-
                 .active-btn {
                     background-color: #ffffff;
                     color: #191919;
@@ -779,33 +783,40 @@ header {
 
         }
 
-        .btn-outline {
-            width: 300px;
-            height: 50px;
-            border-radius: 50px;
-            font-weight: 400;
-            font-size: 16px;
-            margin-top: 35px;
-            margin-left: auto; // Få knappen centrerad
+        .btn-parent {
+            text-align: center;
+            padding-bottom: 90px;
 
-            @media (min-width:500px) {
-                max-width: 400px;
-            }
-
-            @media (min-width: 1300px) {
-                width: 200px;
+            .btn-outline {
+                width: 300px;
                 height: 50px;
-            }
+                border-radius: 50px;
+                font-weight: 400;
+                font-size: 16px;
+                margin-top: 35px;
 
-            i {
-                margin-left: 10px;
-            }
 
-            &:hover {
-                background-color: #e3e3e3;
-                color: #191919;
-            }
 
+
+                @media (min-width:500px) {
+                    max-width: 400px;
+                }
+
+                @media (min-width: 1300px) {
+                    width: 200px;
+                    height: 50px;
+                }
+
+                i {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: #e3e3e3;
+                    color: #191919;
+                }
+
+            }
         }
     }
 }
