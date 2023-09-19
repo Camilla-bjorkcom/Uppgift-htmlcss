@@ -747,6 +747,11 @@ header {
         flex-direction: column;
         align-items: center;
 
+        
+        @media (min-width: 1700px) {
+            align-items: unset;
+        }
+
         h2 {
         font-size: 28px;
 
@@ -771,7 +776,7 @@ header {
                 position: relative;
                 height: 310px;
                 width: 380px;
-                padding: 35px;
+                padding: 30px;
                 
 
                 @media (min-width:1700px) {
