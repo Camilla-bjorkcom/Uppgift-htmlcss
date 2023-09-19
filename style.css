@@ -532,26 +532,26 @@ header .container .menu .main-menu button:hover {
   max-width: 500px;
 }
 .aboutcompany .container .left-img .informative-text {
+  background-color: #BEEBFF;
+  text-align: left;
   display: inline;
   position: absolute;
   bottom: 0px;
   left: 355px;
-  background-color: #BEEBFF;
-  margin: auto;
   max-width: 400px;
   padding: 30px;
-  align-items: center;
 }
 @media (min-width: 1400px) {
   .aboutcompany .container .left-img .informative-text {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 10px;
     bottom: 280px;
     left: -50px;
     width: 340px;
     height: 180px;
+    align-items: center;
+    justify-content: flex-start;
   }
 }
 .aboutcompany .container .left-img .informative-text h4 {
@@ -648,8 +648,12 @@ header .container .menu .main-menu button:hover {
 
 .our-services {
   background-color: #F0EFE9;
-  padding: 20px;
   position: relative;
+}
+@media (min-width: 1400px) {
+  .our-services {
+    padding: 20px;
+  }
 }
 .our-services .background-lines-right {
   position: absolute;
@@ -657,10 +661,25 @@ header .container .menu .main-menu button:hover {
   bottom: 0;
 }
 .our-services .container {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1400px) {
+  .our-services .container {
+    display: block;
+  }
 }
 .our-services .container .boxes {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1400px) {
+  .our-services .container .boxes {
+    flex-direction: row;
+  }
 }
 .our-services .container .boxes .box {
   background-color: #FFFFFF;
