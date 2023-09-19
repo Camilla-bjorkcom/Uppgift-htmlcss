@@ -234,7 +234,7 @@ header .container .menu .main-menu button:hover {
   font-size: 30px;
   text-align: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 560px) {
   .showcase .container .content .slogan-showcase h1 {
     font-size: 50px;
   }
@@ -347,6 +347,9 @@ header .container .menu .main-menu button:hover {
   }
 }
 
+.brands {
+  padding: 30px;
+}
 .brands .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -396,6 +399,9 @@ header .container .menu .main-menu button:hover {
   }
 }
 
+.features {
+  padding: 30px;
+}
 .features .container {
   border: 1.5px solid #DAD9D3;
 }
@@ -428,6 +434,12 @@ header .container .menu .main-menu button:hover {
 }
 .features .container .section-title h2 {
   text-align: center;
+  font-size: 28px;
+}
+@media (min-width: 650px) {
+  .features .container .section-title h2 {
+    font-size: 45px;
+  }
 }
 @media (min-width: 1200px) {
   .features .container .section-title h2 {
@@ -500,6 +512,9 @@ header .container .menu .main-menu button:hover {
   font-weight: 400;
 }
 
+.aboutcompany {
+  padding: 30px;
+}
 .aboutcompany .container {
   padding-top: 100px;
   padding-bottom: 100px;
@@ -584,7 +599,7 @@ header .container .menu .main-menu button:hover {
   }
 }
 .aboutcompany .section-title h2 {
-  font-size: 22px;
+  font-size: 28px;
 }
 @media (min-width: 650px) {
   .aboutcompany .section-title h2 {
@@ -614,7 +629,7 @@ header .container .menu .main-menu button:hover {
   margin-top: 120px;
 }
 .aboutcompany .section-title .about-btn .btn-dark {
-  width: 300px;
+  width: 200px;
   height: 50px;
   border: none;
   border-radius: 50px;
@@ -652,33 +667,35 @@ header .container .menu .main-menu button:hover {
 .aboutcompany .section-title .about-btn a {
   color: #191919;
   text-decoration: none;
+  text-align: center;
 }
 .aboutcompany .section-title .about-btn a:hover {
   color: #bebebe;
 }
 
 .our-services {
+  padding: 30px;
   background-color: #F0EFE9;
   position: relative;
-}
-@media (min-width: 1400px) {
-  .our-services {
-    padding: 20px;
-  }
+  z-index: 10;
 }
 .our-services .background-lines-right {
   position: absolute;
   right: 0;
   bottom: 0;
+  z-index: 1;
 }
 .our-services .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1400px) {
-  .our-services .container {
-    display: block;
+.our-services .container h2 {
+  font-size: 28px;
+}
+@media (min-width: 650px) {
+  .our-services .container h2 {
+    font-size: 45px;
   }
 }
 .our-services .container .boxes {
@@ -687,7 +704,7 @@ header .container .menu .main-menu button:hover {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1700px) {
   .our-services .container .boxes {
     flex-direction: row;
   }
@@ -698,7 +715,11 @@ header .container .menu .main-menu button:hover {
   height: 310px;
   width: 380px;
   padding: 35px;
-  margin-right: 30px;
+}
+@media (min-width: 1700px) {
+  .our-services .container .boxes .box {
+    margin-right: 30px;
+  }
 }
 .our-services .container .boxes .box h3 {
   margin-top: 20px;
@@ -763,15 +784,26 @@ header .container .menu .main-menu button:hover {
   color: #191919;
 }
 
+.projectandcase .container {
+  padding: 30px;
+}
 .projectandcase .container .section-title {
   text-align: center;
+}
+.projectandcase .container .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 650px) {
+  .projectandcase .container .section-title h2 {
+    font-size: 45px;
+  }
 }
 .projectandcase .container .projects {
   display: grid;
   grid-template-columns: 1fr;
   gap: 30px;
 }
-@media (min-width: 768px) {
+@media (min-width: 850px) {
   .projectandcase .container .projects {
     grid-template-columns: 1fr 1fr;
   }
@@ -858,9 +890,4 @@ header .container .menu .main-menu button:hover {
   font-size: 16px;
   text-decoration: none;
   color: #191919;
-}
-@media (min-width: 500px) {
-  .newsletter .container form .btn-yellowa {
-    max-width: px;
-  }
 }

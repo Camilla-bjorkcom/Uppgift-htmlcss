@@ -267,7 +267,7 @@ header {
                     font-size: 30px;
                     text-align: center;
 
-                    @media (min-width:500px) {
+                    @media (min-width:560px) {
                         font-size: 50px;
                     }
 
@@ -387,6 +387,7 @@ header {
 }
 
 .brands {
+    padding: 30px;
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -437,6 +438,7 @@ header {
 }
 
 .features {
+    padding: 30px;
     .container {
         border: 1.5px solid #DAD9D3;
 
@@ -467,6 +469,11 @@ header {
 
             h2 {
                 text-align: center;
+                font-size: 28px;
+
+                @media (min-width: 650px) {
+                    font-size: 45px;
+                }
 
                 @media (min-width: 1200px) {
                     text-align: left;
@@ -550,6 +557,7 @@ header {
 }
 
 .aboutcompany {
+    padding: 30px;
     .container {
         padding-top: 100px;
         padding-bottom: 100px;
@@ -635,7 +643,7 @@ header {
 
 
         h2 {
-            font-size: 22px;
+            font-size: 28px;
 
             @media (min-width: 650px) {
                 font-size: 45px;
@@ -664,7 +672,7 @@ header {
             margin-top: 120px;
 
             .btn-dark {
-                width: 300px;
+                width: 200px;
                 height: 50px;
                 border: none;
                 border-radius: 50px;
@@ -707,6 +715,7 @@ header {
             a {
                 color: #191919;
                 text-decoration: none;
+                text-align: center;
 
                 &:hover {
                     color: #bebebe;
@@ -721,17 +730,16 @@ header {
 
 
 .our-services {
+    padding: 30px;
     background-color: #F0EFE9;
     position: relative;
-
-    @media (min-width:1400px) {
-        padding: 20px;
-    }
+    z-index: 10;
 
     .background-lines-right {
         position: absolute;
         right: 0;
         bottom: 0;
+        z-index: 1;
     }
 
     .container {
@@ -739,9 +747,14 @@ header {
         flex-direction: column;
         align-items: center;
 
-        @media (min-width:1400px) {
-            display: block;
+        h2 {
+        font-size: 28px;
+
+        @media (min-width: 650px) {
+            font-size: 45px;
         }
+
+    }
 
         .boxes {
             display: flex;
@@ -749,7 +762,7 @@ header {
             flex-direction: column;
             gap: 20px;
 
-            @media (min-width:1400px) {
+            @media (min-width:1700px) {
                 flex-direction: row;
             }
 
@@ -759,7 +772,11 @@ header {
                 height: 310px;
                 width: 380px;
                 padding: 35px;
-                margin-right: 30px;
+                
+
+                @media (min-width:1700px) {
+                    margin-right: 30px;
+                }
 
 
                 h3 {
@@ -842,9 +859,17 @@ header {
 .projectandcase {
 
     .container {
-
+        padding: 30px;
         .section-title {
             text-align: center;
+
+            h2 {
+                font-size: 28px;
+        
+                @media (min-width: 650px) {
+                    font-size: 45px;
+                }
+            }
         }
 
         .projects {
@@ -852,7 +877,7 @@ header {
             grid-template-columns: 1fr;
             gap: 30px;
 
-            @media (min-width: 768px) {
+            @media (min-width: 850px) {
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -959,7 +984,7 @@ header {
 
             .btn-yellowa {
                 @media (min-width:500px) {
-                    max-width: px;
+                    
                 }
             }
 
