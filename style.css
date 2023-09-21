@@ -789,6 +789,78 @@ header .container .menu .main-menu button:hover {
   color: #191919;
 }
 
+.chooseus {
+  padding: 30px;
+}
+.chooseus .container {
+  display: flex;
+  gap: 100px;
+  padding: 70px;
+}
+.chooseus .container .left {
+  flex: 1;
+}
+.chooseus .container .left .why {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
+  align-items: center;
+  gap: 20px;
+}
+.chooseus .container .left .why .icon {
+  border: 1px solid #F0EFE9;
+  border-radius: 50px;
+  height: 55px;
+  width: 55px;
+  position: relative;
+}
+.chooseus .container .left .why .icon i {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.chooseus .container .left .why #icon1 {
+  grid-area: icon1;
+}
+.chooseus .container .left .why #icon2 {
+  grid-area: icon2;
+}
+.chooseus .container .left .why #icon3 {
+  grid-area: icon3;
+}
+.chooseus .container .left .why #icon4 {
+  grid-area: icon4;
+}
+.chooseus .container .left .why .argument h3 {
+  margin-top: 20px;
+  font-family: "DM sans", "sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+}
+.chooseus .container .left .why #argument1 {
+  grid-area: argument1;
+}
+.chooseus .container .left .why #argument2 {
+  grid-area: argument2;
+}
+.chooseus .container .left .why #argument3 {
+  grid-area: argument3;
+}
+.chooseus .container .left .why #argument4 {
+  grid-area: argument4;
+}
+.chooseus .container .right {
+  position: relative;
+  flex: 2;
+}
+.chooseus .container .right .background-box {
+  position: absolute;
+  background-color: #F0EFE9;
+  height: 430px;
+  width: 1050px;
+  bottom: 50px;
+}
+
 .projectandcase .container {
   padding: 30px;
 }
