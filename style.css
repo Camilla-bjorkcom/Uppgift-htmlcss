@@ -789,24 +789,44 @@ header .container .menu .main-menu button:hover {
   color: #191919;
 }
 
-.chooseus {
-  padding: 30px;
-}
 .chooseus .container {
   display: flex;
   gap: 200px;
-  padding: 70px;
 }
-.chooseus .container .left {
-  flex: 1.5;
-  display: overflow;
+@media (min-width: 1600px) {
+  .chooseus .container .left {
+    flex: 1.5;
+    display: overflow;
+  }
+}
+.chooseus .container .left .section-title {
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .left .section-title {
+    text-align: left;
+  }
+}
+.chooseus .container .left .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .left .section-title h2 {
+    font-size: 45px;
+  }
 }
 .chooseus .container .left .why {
   display: grid;
   grid-template-columns: max-content max-content;
   grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
+  justify-content: center;
   align-items: center;
   gap: 20px;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .left .why {
+    justify-content: initial;
+  }
 }
 .chooseus .container .left .why .icon {
   border: 1px solid #F0EFE9;
@@ -843,6 +863,14 @@ header .container .menu .main-menu button:hover {
   font-size: 22px;
   font-weight: 700;
 }
+.chooseus .container .left .why .argument p {
+  font-size: 0.8em;
+}
+@media (min-width: 850px) {
+  .chooseus .container .left .why .argument p {
+    font-size: 1em;
+  }
+}
 .chooseus .container .left .why #argument1 {
   grid-area: argument1;
 }
@@ -856,22 +884,40 @@ header .container .menu .main-menu button:hover {
   grid-area: argument4;
 }
 .chooseus .container .right {
-  position: relative;
-  flex: 2;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .right {
+    display: block;
+    position: relative;
+    flex: 2;
+  }
 }
 .chooseus .container .right .chooseus-image {
-  position: absolute;
-  left: 130px;
-  top: 250px;
-  z-index: 1;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .right .chooseus-image {
+    display: block;
+    position: absolute;
+    left: 110px;
+    top: 250px;
+    z-index: 1;
+  }
 }
 .chooseus .container .right .background-box {
-  position: absolute;
-  background-color: #F0EFE9;
-  height: 430px;
-  width: 100vw;
-  bottom: 10px;
-  z-index: -1;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .chooseus .container .right .background-box {
+    display: block;
+    position: absolute;
+    background-color: #F0EFE9;
+    height: 430px;
+    width: 100vw;
+    bottom: 10px;
+    z-index: -1;
+  }
 }
 
 .projectandcase .container {
