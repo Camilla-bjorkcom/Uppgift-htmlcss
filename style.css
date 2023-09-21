@@ -794,11 +794,12 @@ header .container .menu .main-menu button:hover {
 }
 .chooseus .container {
   display: flex;
-  gap: 100px;
+  gap: 200px;
   padding: 70px;
 }
 .chooseus .container .left {
-  flex: 1;
+  flex: 1.5;
+  display: overflow;
 }
 .chooseus .container .left .why {
   display: grid;
@@ -853,12 +854,19 @@ header .container .menu .main-menu button:hover {
   position: relative;
   flex: 2;
 }
+.chooseus .container .right .chooseus-image {
+  position: absolute;
+  left: 130px;
+  top: 250px;
+  z-index: 1;
+}
 .chooseus .container .right .background-box {
   position: absolute;
   background-color: #F0EFE9;
   height: 430px;
-  width: 1050px;
-  bottom: 50px;
+  width: 100vw;
+  bottom: 10px;
+  z-index: -1;
 }
 
 .projectandcase .container {
