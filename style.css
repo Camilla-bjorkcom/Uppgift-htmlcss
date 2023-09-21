@@ -512,10 +512,10 @@ header .container .menu .main-menu button:hover {
   font-weight: 400;
 }
 
-.aboutcompany {
+.about-company {
   padding: 30px;
 }
-.aboutcompany .container {
+.about-company .container {
   padding-top: 100px;
   padding-bottom: 100px;
   display: flex;
@@ -524,27 +524,27 @@ header .container .menu .main-menu button:hover {
   align-items: center;
 }
 @media (min-width: 1400px) {
-  .aboutcompany .container {
+  .about-company .container {
     flex-direction: unset;
   }
 }
-.aboutcompany .container .left-img {
+.about-company .container .left-img {
   display: flex;
   flex-direction: column;
   position: relative;
   justify-content: space-between;
 }
 @media (min-width: 1400px) {
-  .aboutcompany .container .left-img {
+  .about-company .container .left-img {
     margin-left: 100px;
     display: block;
   }
 }
-.aboutcompany .container .left-img img {
+.about-company .container .left-img img {
   display: none;
 }
 @media (min-width: 650px) {
-  .aboutcompany .container .left-img img {
+  .about-company .container .left-img img {
     height: 615px;
     max-width: 500px;
     display: block;
@@ -552,7 +552,7 @@ header .container .menu .main-menu button:hover {
     width: max-content;
   }
 }
-.aboutcompany .container .left-img .informative-text {
+.about-company .container .left-img .informative-text {
   background-color: #BEEBFF;
   text-align: left;
   position: absolute;
@@ -560,7 +560,7 @@ header .container .menu .main-menu button:hover {
   display: none;
 }
 @media (min-width: 650px) {
-  .aboutcompany .container .left-img .informative-text {
+  .about-company .container .left-img .informative-text {
     display: block;
     width: 340px;
     height: 180px;
@@ -570,7 +570,7 @@ header .container .menu .main-menu button:hover {
   }
 }
 @media (min-width: 1400px) {
-  .aboutcompany .container .left-img .informative-text {
+  .about-company .container .left-img .informative-text {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -580,10 +580,10 @@ header .container .menu .main-menu button:hover {
     justify-content: flex-start;
   }
 }
-.aboutcompany .container .left-img .informative-text h4 {
+.about-company .container .left-img .informative-text h4 {
   color: #F94D1C;
 }
-.aboutcompany .section-title {
+.about-company .section-title {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -591,44 +591,44 @@ header .container .menu .main-menu button:hover {
   padding: 50px;
 }
 @media (min-width: 1400px) {
-  .aboutcompany .section-title {
+  .about-company .section-title {
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 100px;
     padding-left: 70px;
   }
 }
-.aboutcompany .section-title h2 {
+.about-company .section-title h2 {
   font-size: 28px;
 }
 @media (min-width: 650px) {
-  .aboutcompany .section-title h2 {
+  .about-company .section-title h2 {
     font-size: 45px;
   }
 }
 @media (min-width: 1400px) {
-  .aboutcompany .section-title h2 {
+  .about-company .section-title h2 {
     padding-right: 120px;
     margin-top: 20px;
   }
 }
-.aboutcompany .section-title p {
+.about-company .section-title p {
   opacity: 70%;
 }
 @media (min-width: 1400px) {
-  .aboutcompany .section-title p {
+  .about-company .section-title p {
     padding-right: 50px;
     margin-top: 30px;
   }
 }
-.aboutcompany .section-title .about-btn {
+.about-company .section-title .about-btn {
   display: flex;
   align-items: center;
   gap: 15px;
   margin: auto;
   margin-top: 120px;
 }
-.aboutcompany .section-title .about-btn .btn-dark {
+.about-company .section-title .about-btn .btn-dark {
   width: 200px;
   height: 50px;
   border: none;
@@ -639,37 +639,37 @@ header .container .menu .main-menu button:hover {
   margin-right: auto;
 }
 @media (min-width: 650px) {
-  .aboutcompany .section-title .about-btn .btn-dark {
+  .about-company .section-title .about-btn .btn-dark {
     max-width: 400px;
   }
 }
 @media (min-width: 1200px) {
-  .aboutcompany .section-title .about-btn .btn-dark {
+  .about-company .section-title .about-btn .btn-dark {
     margin-left: 0px;
     margin-right: 30px;
     text-align: center;
   }
 }
 @media (min-width: 1300px) {
-  .aboutcompany .section-title .about-btn .btn-dark {
+  .about-company .section-title .about-btn .btn-dark {
     width: 200px;
     height: 50px;
   }
 }
-.aboutcompany .section-title .about-btn .btn-dark i {
+.about-company .section-title .about-btn .btn-dark i {
   margin-left: 10px;
 }
-.aboutcompany .section-title .about-btn .round-button:hover {
+.about-company .section-title .about-btn .round-button:hover {
   background-color: #191919;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
-.aboutcompany .section-title .about-btn a {
+.about-company .section-title .about-btn a {
   color: #191919;
   text-decoration: none;
   text-align: center;
 }
-.aboutcompany .section-title .about-btn a:hover {
+.about-company .section-title .about-btn a:hover {
   color: #bebebe;
 }
 
@@ -789,33 +789,33 @@ header .container .menu .main-menu button:hover {
   color: #191919;
 }
 
-.chooseus .container {
+.choose-us .container {
   display: flex;
   gap: 200px;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .left {
+  .choose-us .container .left {
     flex: 1.5;
     display: overflow;
   }
 }
-.chooseus .container .left .section-title {
+.choose-us .container .left .section-title {
   text-align: center;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .left .section-title {
+  .choose-us .container .left .section-title {
     text-align: left;
   }
 }
-.chooseus .container .left .section-title h2 {
+.choose-us .container .left .section-title h2 {
   font-size: 28px;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .left .section-title h2 {
+  .choose-us .container .left .section-title h2 {
     font-size: 45px;
   }
 }
-.chooseus .container .left .why {
+.choose-us .container .left .why {
   display: grid;
   grid-template-columns: max-content max-content;
   grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
@@ -824,80 +824,80 @@ header .container .menu .main-menu button:hover {
   gap: 20px;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .left .why {
+  .choose-us .container .left .why {
     justify-content: initial;
   }
 }
-.chooseus .container .left .why .icon {
+.choose-us .container .left .why .icon {
   border: 1px solid #F0EFE9;
   border-radius: 50px;
   height: 55px;
   width: 55px;
   position: relative;
 }
-.chooseus .container .left .why .icon i {
+.choose-us .container .left .why .icon i {
   position: absolute;
   bottom: 20px;
   left: 20px;
 }
-.chooseus .container .left .why .icon:hover {
+.choose-us .container .left .why .icon:hover {
   background-color: #191919;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
-.chooseus .container .left .why #icon1 {
+.choose-us .container .left .why #icon1 {
   grid-area: icon1;
 }
-.chooseus .container .left .why #icon2 {
+.choose-us .container .left .why #icon2 {
   grid-area: icon2;
 }
-.chooseus .container .left .why #icon3 {
+.choose-us .container .left .why #icon3 {
   grid-area: icon3;
 }
-.chooseus .container .left .why #icon4 {
+.choose-us .container .left .why #icon4 {
   grid-area: icon4;
 }
-.chooseus .container .left .why .argument h3 {
+.choose-us .container .left .why .argument h3 {
   margin-top: 20px;
   font-family: "DM sans", "sans-serif";
   font-size: 22px;
   font-weight: 700;
 }
-.chooseus .container .left .why .argument p {
+.choose-us .container .left .why .argument p {
   font-size: 0.8em;
 }
 @media (min-width: 850px) {
-  .chooseus .container .left .why .argument p {
+  .choose-us .container .left .why .argument p {
     font-size: 1em;
   }
 }
-.chooseus .container .left .why #argument1 {
+.choose-us .container .left .why #argument1 {
   grid-area: argument1;
 }
-.chooseus .container .left .why #argument2 {
+.choose-us .container .left .why #argument2 {
   grid-area: argument2;
 }
-.chooseus .container .left .why #argument3 {
+.choose-us .container .left .why #argument3 {
   grid-area: argument3;
 }
-.chooseus .container .left .why #argument4 {
+.choose-us .container .left .why #argument4 {
   grid-area: argument4;
 }
-.chooseus .container .right {
+.choose-us .container .right {
   display: none;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .right {
+  .choose-us .container .right {
     display: block;
     position: relative;
     flex: 2;
   }
 }
-.chooseus .container .right .chooseus-image {
+.choose-us .container .right .chooseus-image {
   display: none;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .right .chooseus-image {
+  .choose-us .container .right .chooseus-image {
     display: block;
     position: absolute;
     left: 110px;
@@ -905,11 +905,11 @@ header .container .menu .main-menu button:hover {
     z-index: 1;
   }
 }
-.chooseus .container .right .background-box {
+.choose-us .container .right .background-box {
   display: none;
 }
 @media (min-width: 1600px) {
-  .chooseus .container .right .background-box {
+  .choose-us .container .right .background-box {
     display: block;
     position: absolute;
     background-color: #F0EFE9;
@@ -994,6 +994,60 @@ header .container .menu .main-menu button:hover {
 }
 .projectandcase .container .btn-dark i {
   margin-left: 10px;
+}
+
+.our-team {
+  background-color: #F0D082;
+  padding: 70px;
+}
+.our-team .container .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.our-team .container .upper .button-team {
+  text-align: center;
+  padding-bottom: 90px;
+}
+.our-team .container .upper .button-team .btn-outline {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 35px;
+}
+@media (min-width: 500px) {
+  .our-team .container .upper .button-team .btn-outline {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1300px) {
+  .our-team .container .upper .button-team .btn-outline {
+    width: 200px;
+    height: 50px;
+  }
+}
+.our-team .container .upper .button-team .btn-outline i {
+  margin-left: 10px;
+}
+.our-team .container .upper .button-team .btn-outline:hover {
+  background-color: #e3e3e3;
+  color: #191919;
+}
+.our-team .container .images-team {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+.our-team .container .images-team .team-intro h3 {
+  margin-top: 20px;
+  font-family: "DM sans", "sans-serif";
+  font-size: 22px;
+  font-weight: 700;
+}
+.our-team .container .dots {
+  text-align: center;
 }
 
 .newsletter {
