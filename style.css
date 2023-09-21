@@ -820,6 +820,11 @@ header .container .menu .main-menu button:hover {
   bottom: 20px;
   left: 20px;
 }
+.chooseus .container .left .why .icon:hover {
+  background-color: #191919;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
 .chooseus .container .left .why #icon1 {
   grid-area: icon1;
 }

@@ -876,7 +876,7 @@ header {
         .left {
             flex: 1.5;
             display: overflow;
-            
+
 
             .why {
                 display: grid;
@@ -900,6 +900,12 @@ header {
                         position: absolute;
                         bottom: 20px;
                         left: 20px;
+                    }
+
+                    &:hover {
+                        background-color: #191919;
+                        border: 1px solid #ffffff;
+                        color: #ffffff;
                     }
                 }
 
@@ -963,7 +969,7 @@ header {
                 background-color: #F0EFE9;
                 height: 430px;
                 width: 100vw;
-                bottom:10px;
+                bottom: 10px;
                 z-index: -1;
             }
         }
