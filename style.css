@@ -55,7 +55,7 @@ body {
   height: 50px;
   border: none;
   border-radius: 50px;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   margin-left: auto;
   margin-right: auto;
@@ -210,6 +210,7 @@ header .container .menu .main-menu button:hover {
 }
 
 .showcase {
+  padding: 30px;
   background-color: #F0EFE9;
   padding-top: 100px;
   position: relative;
@@ -789,9 +790,15 @@ header .container .menu .main-menu button:hover {
   color: #191919;
 }
 
+.choose-us {
+  padding: 30px;
+}
 .choose-us .container {
   display: flex;
   gap: 200px;
+}
+.choose-us .container .left {
+  align-items: center;
 }
 @media (min-width: 1600px) {
   .choose-us .container .left {
@@ -920,6 +927,9 @@ header .container .menu .main-menu button:hover {
   }
 }
 
+.projectandcase {
+  padding: 30px;
+}
 .projectandcase .container {
   padding: 30px;
 }
@@ -998,7 +1008,7 @@ header .container .menu .main-menu button:hover {
 
 .our-team {
   background-color: #F0D082;
-  padding: 70px;
+  padding: 30px;
 }
 .our-team .container .upper {
   display: flex;
@@ -1095,31 +1105,84 @@ header .container .menu .main-menu button:hover {
 .newsletter {
   background-color: #F0EFE9;
   position: relative;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 30px;
   margin-top: 70px;
+  align-items: center;
 }
 .newsletter .background-lines-right {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
+  display: none;
+}
+@media (min-width: 1600px) {
+  .newsletter .background-lines-right {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    right: 0;
+  }
 }
 .newsletter .container {
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1600px) {
+  .newsletter .container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+.newsletter .container form {
   align-items: center;
 }
 .newsletter .container form input {
-  padding: 15px 30px;
+  padding: 14px 30px;
   border-radius: 25px;
-  margin-right: 20px;
   outline: none;
   border: 1px solid #DAD9D3;
-  margin-right: 20px;
   font-family: "inter", "sans-serif";
   font-size: 16px;
   text-decoration: none;
   color: #191919;
+}
+.newsletter .container form .btn-yellowa {
+  margin-top: 15px;
+}
+@media (min-width: 800px) {
+  .newsletter .container form .btn-yellowa {
+    max-width: 350px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1300px) {
+  .newsletter .container form .btn-yellowa {
+    width: 200px;
+    height: 50px;
+    margin-left: 15px;
+  }
+}
+.newsletter .container form .btn-yellowa i {
+  margin-left: 10px;
+}
+.newsletter .container form .btn-yellowa:hover {
+  background-color: #ffffff;
+  color: #191919;
+}
+.newsletter .section-title {
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .newsletter .section-title {
+    text-align: left;
+  }
+}
+.newsletter .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 1600px) {
+  .newsletter .section-title h2 {
+    font-size: 45px;
+  }
 }

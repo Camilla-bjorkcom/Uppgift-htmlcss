@@ -67,7 +67,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 50px;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
@@ -241,6 +241,7 @@ header {
 }
 
 .showcase {
+    padding: 30px;
     background-color: #F0EFE9;
     padding-top: 100px;
     position: relative;
@@ -389,6 +390,7 @@ header {
 .brands {
     padding: 30px;
 
+
     .container {
         display: grid;
         grid-template-columns: 1fr;
@@ -440,6 +442,7 @@ header {
 
 .features {
     padding: 30px;
+
 
     .container {
         border: 1.5px solid #DAD9D3;
@@ -560,6 +563,7 @@ header {
 
 .about-company {
     padding: 30px;
+
 
     .container {
         padding-top: 100px;
@@ -735,6 +739,7 @@ header {
 
 .our-services {
     padding: 30px;
+
     background-color: #F0EFE9;
     position: relative;
     z-index: 10;
@@ -866,12 +871,14 @@ header {
 }
 
 .choose-us {
+    padding: 30px;
 
     .container {
         display: flex;
         gap: 200px;
 
         .left {
+            align-items: center;
 
             @media (min-width:1600px) {
                 flex: 1.5;
@@ -1024,6 +1031,7 @@ header {
 }
 
 .projectandcase {
+    padding: 30px;
 
     .container {
         padding: 30px;
@@ -1118,7 +1126,8 @@ header {
 
 .our-team {
     background-color: #F0D082;
-    padding: 70px;
+    padding: 30px;
+
 
     .container {
         .upper {
@@ -1225,31 +1234,46 @@ header {
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding: 30px;
     margin-top: 70px;
+    align-items: center;
 
     .background-lines-right {
-        position: absolute;
-        bottom: 50px;
-        right: 0;
+        display: none;
+
+        @media (min-width: 1600px) {
+            display: block;
+            position: absolute;
+            bottom: 50px;
+            right: 0;
+        
+        }
     }
 
     .container {
         margin-top: 0px;
         margin-bottom: 0px;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
 
+        @media (min-width: 950px) {
+
+        }
+        @media (min-width:1600px ) {
+            justify-content: space-between;
+            flex-direction: row;
+        }
+
         form {
+            align-items: center;
+
             input {
-                padding: 15px 30px;
+                padding: 14px 30px;
                 border-radius: 25px;
-                margin-right: 20px;
                 outline: none;
                 border: 1px solid #DAD9D3;
-                margin-right: 20px;
                 font-family: 'inter', 'sans-serif';
                 font-size: 16px;
                 text-decoration: none;
@@ -1257,7 +1281,44 @@ header {
             }
 
             .btn-yellowa {
-                @media (min-width:500px) {}
+                margin-top: 15px;
+
+                @media (min-width:800px) {
+                    max-width: 350px;
+                    margin-top: 0;
+                }
+
+                @media (min-width: 1300px) {
+                    width: 200px;
+                    height: 50px;
+                    
+                    margin-left: 15px;
+                }
+
+                i {
+                    margin-left: 10px;
+                }
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #191919;
+                }
+            }
+
+        }
+    }
+    .section-title {
+        text-align: center;
+
+        @media (min-width: 1600px) {
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 28px;
+
+            @media (min-width: 1600px) {
+                font-size: 45px;
             }
 
         }
