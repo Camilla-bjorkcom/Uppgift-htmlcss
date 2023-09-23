@@ -1002,8 +1002,31 @@ header .container .menu .main-menu button:hover {
 }
 .our-team .container .upper {
   display: flex;
-  justify-content: space-between;
-  align-items: end;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 1600px) {
+  .our-team .container .upper {
+    justify-content: space-between;
+    align-items: end;
+    flex-direction: row;
+  }
+}
+.our-team .container .upper .section-title {
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .our-team .container .upper .section-title {
+    text-align: left;
+  }
+}
+.our-team .container .upper .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 1600px) {
+  .our-team .container .upper .section-title h2 {
+    font-size: 45px;
+  }
 }
 .our-team .container .upper .button-team {
   text-align: center;
@@ -1037,8 +1060,23 @@ header .container .menu .main-menu button:hover {
 }
 .our-team .container .images-team {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   gap: 30px;
+}
+@media (min-width: 1600px) {
+  .our-team .container .images-team {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+.our-team .container .images-team .team-intro {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .our-team .container .images-team .team-intro {
+    display: block;
+  }
 }
 .our-team .container .images-team .team-intro h3 {
   margin-top: 20px;
@@ -1046,7 +1084,11 @@ header .container .menu .main-menu button:hover {
   font-size: 22px;
   font-weight: 700;
 }
+.our-team .container .images-team #active-img {
+  display: block;
+}
 .our-team .container .dots {
+  padding-top: 50px;
   text-align: center;
 }
 
