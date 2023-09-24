@@ -735,8 +735,6 @@ header {
     }
 }
 
-
-
 .our-services {
     padding: 30px;
 
@@ -1234,7 +1232,7 @@ header {
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
-    padding: 30px;
+    padding: 90px;
     margin-top: 70px;
     align-items: center;
 
@@ -1328,10 +1326,40 @@ header {
 footer {
     background-color: #0E1021;
     color: #DAD9D3;
+    height: 100%;
+    position: relative;
+    padding: 90px;
+
+    .position-line-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+
+        .border-line {
+            border: 1px solid #8b8989;
+            width: 100vw;
+            position: absolute;
+            bottom: 90px;
+            right: 0;
+        }
+
+        .background-lines {
+            opacity: 70%;
+            max-width: 100vw;
+            position: absolute;
+            bottom: 91px;
+            right: 0;
+            z-index: -1;
+        }
+    }
+
 
     .container {
         padding: 90px;
-        .upper {
+        padding-bottom: 0px;
+
+        .upper-pt {
             display: grid;
             grid-template-columns: 2fr fit-content fit-content fit-content fit-content;
             grid-template-rows: auto;
@@ -1348,9 +1376,10 @@ footer {
                     margin-top: 30px;
                 }
             }
+
             .informative-text {
                 margin-right: 30px;
-                
+
                 h3 {
                     margin-bottom: 30px;
                 }
@@ -1370,6 +1399,25 @@ footer {
 
             #link {
                 grid-area: link;
+            }
+        }
+
+
+        .lower-pt {
+            align-items: end;
+            .flex {
+                display: flex;
+                justify-content: space-between;
+
+                p {}
+
+                .social-media {
+
+                    a {
+                        margin-right: 15px;
+                    }
+
+                }
             }
         }
     }
