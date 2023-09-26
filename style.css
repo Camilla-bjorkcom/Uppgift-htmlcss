@@ -691,7 +691,7 @@ header .container .menu .main-menu button:hover {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
   .our-services .container {
     align-items: unset;
   }
@@ -710,7 +710,7 @@ header .container .menu .main-menu button:hover {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
   .our-services .container .boxes {
     flex-direction: row;
   }
@@ -718,13 +718,16 @@ header .container .menu .main-menu button:hover {
 .our-services .container .boxes .box {
   background-color: #FFFFFF;
   position: relative;
-  height: 310px;
-  width: 380px;
+  flex-basis: 340px;
   padding: 30px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
-@media (min-width: 1700px) {
+@media (min-width: 1600px) {
   .our-services .container .boxes .box {
-    margin-right: 30px;
+    margin-right: 20px;
+    height: 310px;
+    width: 380px;
   }
 }
 .our-services .container .boxes .box h3 {
@@ -791,11 +794,33 @@ header .container .menu .main-menu button:hover {
 }
 
 .choose-us {
-  padding: 30px;
+  padding: 30 0px;
+  position: relative;
+}
+.choose-us .background-box {
+  display: none;
+}
+@media (min-width: 1600px) {
+  .choose-us .background-box {
+    display: block;
+    position: absolute;
+    background-color: #F0EFE9;
+    height: 430px;
+    width: 55%;
+    bottom: 100px;
+    right: 0;
+    z-index: -1;
+  }
 }
 .choose-us .container {
   display: flex;
+  flex-direction: column;
   gap: 200px;
+}
+@media (min-width: 1600px) {
+  .choose-us .container {
+    flex-direction: row;
+  }
 }
 .choose-us .container .left {
   align-items: center;
@@ -907,23 +932,8 @@ header .container .menu .main-menu button:hover {
   .choose-us .container .right .chooseus-image {
     display: block;
     position: absolute;
-    left: 110px;
-    top: 250px;
-    z-index: 1;
-  }
-}
-.choose-us .container .right .background-box {
-  display: none;
-}
-@media (min-width: 1600px) {
-  .choose-us .container .right .background-box {
-    display: block;
-    position: absolute;
-    background-color: #F0EFE9;
-    height: 430px;
-    width: 100vw;
-    bottom: 10px;
-    z-index: -1;
+    left: -10px;
+    top: 160px;
   }
 }
 
@@ -1106,7 +1116,6 @@ header .container .menu .main-menu button:hover {
   background-color: #F0EFE9;
   position: relative;
   padding: 90px;
-  margin-top: 70px;
   align-items: center;
 }
 .newsletter .background-lines-right {
@@ -1172,6 +1181,7 @@ header .container .menu .main-menu button:hover {
 }
 .newsletter .section-title {
   text-align: center;
+  padding: 0px;
 }
 @media (min-width: 1600px) {
   .newsletter .section-title {
@@ -1192,50 +1202,99 @@ footer {
   color: #DAD9D3;
   height: 100%;
   position: relative;
-  padding: 90px;
+  padding: 90px 0px;
 }
 footer .position-line-img {
   position: absolute;
   bottom: 0;
   right: 0;
   z-index: 0;
+  margin: 35px 0;
+  display: none;
 }
 footer .position-line-img .border-line {
   border: 1px solid #8b8989;
   width: 100vw;
   position: absolute;
-  bottom: 90px;
+  bottom: 80px;
   right: 0;
 }
 footer .position-line-img .background-lines {
   opacity: 70%;
   max-width: 100vw;
   position: absolute;
-  bottom: 91px;
+  bottom: 81px;
   right: 0;
   z-index: -1;
 }
+@media (min-width: 800px) {
+  footer .position-line-img {
+    margin: 0px;
+  }
+}
+@media (min-width: 400px) {
+  footer .position-line-img {
+    display: block;
+  }
+}
 footer .container {
-  padding: 90px;
+  padding: 30px;
   padding-bottom: 0px;
+}
+@media (min-width: 850px) {
+  footer .container {
+    padding: 70px;
+  }
 }
 footer .container .upper-pt {
   display: grid;
-  grid-template-columns: 2fr fit-content fit-content fit-content fit-content;
-  grid-template-rows: auto;
-  grid-template-areas: "logo company help resources link";
-  -moz-column-gap: 35px;
-       column-gap: 35px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "logo" "company" "help" "resources" "link";
+  gap: 30px;
+  text-align: center;
+}
+@media (min-width: 850px) {
+  footer .container .upper-pt {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "logo logo" "company help" "resources link";
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+  }
+}
+@media (min-width: 1400px) {
+  footer .container .upper-pt {
+    grid-template-columns: 2fr fit-content fit-content fit-content fit-content;
+    grid-template-rows: auto;
+    grid-template-areas: "logo company help resources link";
+    -moz-column-gap: 35px;
+         column-gap: 35px;
+  }
 }
 footer .container .upper-pt .logo {
   grid-area: logo;
-  margin-right: 40px;
+  margin-right: 0px;
+}
+@media (min-width: 850px) {
+  footer .container .upper-pt .logo {
+    margin-right: 40px;
+  }
 }
 footer .container .upper-pt .logo p {
-  margin-top: 30px;
+  margin-top: 0px;
+}
+@media (min-width: 850px) {
+  footer .container .upper-pt .logo p {
+    margin-right: 30px;
+  }
 }
 footer .container .upper-pt .informative-text {
-  margin-right: 30px;
+  margin-right: 0px;
+}
+@media (min-width: 850px) {
+  footer .container .upper-pt .informative-text {
+    margin-right: 30px;
+  }
 }
 footer .container .upper-pt .informative-text h3 {
   margin-bottom: 30px;
@@ -1253,11 +1312,36 @@ footer .container .upper-pt #link {
   grid-area: link;
 }
 footer .container .lower-pt {
-  align-items: end;
+  margin: 20px;
+}
+@media (min-width: 1400px) {
+  footer .container .lower-pt {
+    margin-top: 100px;
+    align-items: end;
+  }
 }
 footer .container .lower-pt .flex {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  footer .container .lower-pt .flex {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 30px;
+  }
+}
+footer .container .lower-pt .flex p {
+  margin: 15px;
+}
+@media (min-width: 1400px) {
+  footer .container .lower-pt .flex p {
+    margin: 0px;
+  }
 }
 footer .container .lower-pt .flex .social-media a {
   margin-right: 15px;
