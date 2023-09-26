@@ -1202,7 +1202,8 @@ footer {
   color: #DAD9D3;
   height: 100%;
   position: relative;
-  padding: 90px 0px;
+  padding-top: 90px;
+  padding-bottom: 0.5%;
 }
 footer .position-line-img {
   position: absolute;
@@ -1216,25 +1217,36 @@ footer .position-line-img .border-line {
   border: 1px solid #8b8989;
   width: 100vw;
   position: absolute;
-  bottom: 80px;
+  bottom: 99px;
   right: 0;
+}
+@media (min-width: 1400px) {
+  footer .position-line-img .border-line {
+    bottom: 80px;
+  }
 }
 footer .position-line-img .background-lines {
   opacity: 70%;
   max-width: 100vw;
   position: absolute;
-  bottom: 81px;
+  bottom: 100px;
   right: 0;
   z-index: -1;
+}
+@media (min-width: 1400px) {
+  footer .position-line-img .background-lines {
+    bottom: 81px;
+  }
+}
+@media (min-width: 500px) {
+  footer .position-line-img {
+    margin: 15px;
+    display: block;
+  }
 }
 @media (min-width: 800px) {
   footer .position-line-img {
     margin: 0px;
-  }
-}
-@media (min-width: 400px) {
-  footer .position-line-img {
-    display: block;
   }
 }
 footer .container {
@@ -1244,6 +1256,7 @@ footer .container {
 @media (min-width: 850px) {
   footer .container {
     padding: 70px;
+    padding-bottom: 0px;
   }
 }
 footer .container .upper-pt {
@@ -1264,9 +1277,9 @@ footer .container .upper-pt {
 }
 @media (min-width: 1400px) {
   footer .container .upper-pt {
-    grid-template-columns: 2fr fit-content fit-content fit-content fit-content;
+    grid-template-columns: repeat(6, fit-content);
     grid-template-rows: auto;
-    grid-template-areas: "logo company help resources link";
+    grid-template-areas: "logo logo company help resources link";
     -moz-column-gap: 35px;
          column-gap: 35px;
   }
@@ -1278,6 +1291,7 @@ footer .container .upper-pt .logo {
 @media (min-width: 850px) {
   footer .container .upper-pt .logo {
     margin-right: 40px;
+    text-align: left;
   }
 }
 footer .container .upper-pt .logo p {
@@ -1288,12 +1302,19 @@ footer .container .upper-pt .logo p {
     margin-right: 30px;
   }
 }
+footer .container .upper-pt .logo .about-us-text {
+  margin-top: 30px;
+}
+footer .container .upper-pt .logo .about-us-text p {
+  margin: 0px;
+}
 footer .container .upper-pt .informative-text {
   margin-right: 0px;
 }
 @media (min-width: 850px) {
   footer .container .upper-pt .informative-text {
     margin-right: 30px;
+    text-align: left;
   }
 }
 footer .container .upper-pt .informative-text h3 {
@@ -1331,8 +1352,6 @@ footer .container .lower-pt .flex {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    padding-bottom: 30px;
   }
 }
 footer .container .lower-pt .flex p {
@@ -1342,6 +1361,9 @@ footer .container .lower-pt .flex p {
   footer .container .lower-pt .flex p {
     margin: 0px;
   }
+}
+footer .container .lower-pt .flex .social-media {
+  padding: 0px;
 }
 footer .container .lower-pt .flex .social-media a {
   margin-right: 15px;
