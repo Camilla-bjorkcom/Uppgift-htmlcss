@@ -1112,6 +1112,47 @@ header .container .menu .main-menu button:hover {
   text-align: center;
 }
 
+.testimonial {
+  background-color: #F0D082;
+  padding: 30px;
+}
+.testimonial .container {
+  display: flex;
+  justify-content: center;
+}
+.testimonial .container .white-box {
+  background-color: white;
+  min-width: 1700px;
+  padding: 12%;
+  margin-bottom: 150px;
+}
+.testimonial .container .white-box .section-title {
+  text-align: center;
+}
+.testimonial .container .white-box .section-title h2 {
+  font-size: 28px;
+}
+@media (min-width: 1600px) {
+  .testimonial .container .white-box .section-title h2 {
+    font-size: 45px;
+  }
+}
+.testimonial .container .white-box .testimonials-from-customers {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 100px;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer {
+  text-align: left;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer img {
+  margin-bottom: 20px;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer p {
+  padding-right: 80px;
+}
+
 .newsletter {
   background-color: #F0EFE9;
   position: relative;

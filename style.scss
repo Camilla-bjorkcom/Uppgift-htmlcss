@@ -1239,6 +1239,66 @@ header {
     }
 }
 
+.testimonial {
+    background-color: #F0D082;
+    padding: 30px;
+
+    .container {
+        display: flex;
+        justify-content: center;
+
+        .white-box {
+            background-color: white;
+            min-width: 1700px;
+            padding: 12%;
+            margin-bottom: 150px;
+
+
+            .section-title {
+                text-align: center;
+
+                h2 {
+                    font-size: 28px;
+
+                    @media (min-width: 1600px) {
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            .testimonials-from-customers {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                gap: 100px;
+                
+                .customer {
+                    text-align: left;
+                    
+                    img {
+                        margin-bottom: 20px;
+                    }
+
+                    p {
+                        padding-right: 80px;
+            
+                    }
+                }
+            }
+        
+        // .image-and-names {
+        //     display: flex;
+        //     justify-content: space-around;
+
+        //     .image-and-name {
+        //         margin-top: 0;
+        //     }
+        // }
+    }
+
+    }
+}
+
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
