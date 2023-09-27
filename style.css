@@ -1123,7 +1123,9 @@ header .container .menu .main-menu button:hover {
 .testimonial .container .white-box {
   background-color: white;
   min-width: 1700px;
-  padding: 12%;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 12%;
   margin-bottom: 150px;
 }
 .testimonial .container .white-box .section-title {
@@ -1144,13 +1146,50 @@ header .container .menu .main-menu button:hover {
   gap: 100px;
 }
 .testimonial .container .white-box .testimonials-from-customers .customer {
+  margin-top: 50px;
   text-align: left;
 }
 .testimonial .container .white-box .testimonials-from-customers .customer img {
   margin-bottom: 20px;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer p {
+.testimonial .container .white-box .testimonials-from-customers .customer .reviews {
   padding-right: 80px;
+  margin-bottom: 30px;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text {
+  display: grid;
+  grid-template-columns: fit-content fit-content;
+  grid-template-areas: "img text";
+  justify-content: left;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text img {
+  grid-area: img;
+  margin-right: 10px;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text .grid-text {
+  grid-area: text;
+}
+.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text .grid-text h3 {
+  margin: 0;
+}
+.testimonial .container .white-box .btn-dark {
+  font-size: 16px;
+  color: white;
+  width: 180px;
+  height: 50px;
+  padding: 10px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 500;
+  display: block;
+  margin: auto;
+  margin-bottom: 130px;
+}
+.testimonial .container .white-box .btn-dark:hover {
+  background-color: #535353;
+}
+.testimonial .container .white-box .btn-dark i {
+  margin-left: 10px;
 }
 
 .newsletter {
