@@ -1193,6 +1193,70 @@ header .container .menu .main-menu button:hover {
   margin-left: 10px;
 }
 
+.article-news {
+  padding: 30px;
+  padding-bottom: 70px;
+}
+.article-news .container {
+  max-width: -moz-min-content;
+  max-width: min-content;
+}
+.article-news .container .upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 40px;
+}
+.article-news .container .upper .section-title {
+  margin-bottom: 0;
+}
+.article-news .container .upper .btn-parent {
+  text-align: right;
+}
+.article-news .container .upper .btn-parent .btn-outline {
+  width: 300px;
+  height: 50px;
+  border-radius: 50px;
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 35px;
+}
+@media (min-width: 500px) {
+  .article-news .container .upper .btn-parent .btn-outline {
+    max-width: 400px;
+  }
+}
+@media (min-width: 1300px) {
+  .article-news .container .upper .btn-parent .btn-outline {
+    width: 200px;
+    height: 50px;
+  }
+}
+.article-news .container .upper .btn-parent .btn-outline i {
+  margin-left: 10px;
+}
+.article-news .container .upper .btn-parent .btn-outline:hover {
+  background-color: #e3e3e3;
+  color: #191919;
+}
+.article-news .container .show-articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 70px;
+}
+.article-news .container .show-articles .article .img-and-date {
+  position: relative;
+}
+.article-news .container .show-articles .article .img-and-date .date {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
+.article-news .container .dots {
+  padding-top: 50px;
+  text-align: center;
+}
+
 .newsletter {
   background-color: #F0EFE9;
   position: relative;
