@@ -1114,65 +1114,66 @@ header .container .menu .main-menu button:hover {
 
 .testimonial {
   background-color: #F0D082;
-  padding: 30px;
+  padding: 30px 30px 150px 30px;
 }
-.testimonial .container {
+.testimonial .white-box {
+  background-color: white;
+  max-width: 1700px;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
+  padding: 0px 30px 100px 30px;
+  margin: auto;
+}
+.testimonial .white-box .container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-.testimonial .container .white-box {
-  background-color: white;
-  min-width: 1700px;
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 0 12%;
-  margin-bottom: 150px;
-}
-.testimonial .container .white-box .section-title {
+.testimonial .white-box .container .section-title {
   text-align: center;
 }
-.testimonial .container .white-box .section-title h2 {
+.testimonial .white-box .container .section-title h2 {
   font-size: 28px;
 }
 @media (min-width: 1600px) {
-  .testimonial .container .white-box .section-title h2 {
+  .testimonial .white-box .container .section-title h2 {
     font-size: 45px;
   }
 }
-.testimonial .container .white-box .testimonials-from-customers {
+.testimonial .white-box .container .testimonials-from-customers {
   display: flex;
   justify-content: space-between;
   padding: 20px;
   gap: 100px;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer {
+.testimonial .white-box .container .testimonials-from-customers .customer {
   margin-top: 50px;
   text-align: left;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer img {
+.testimonial .white-box .container .testimonials-from-customers .customer img {
   margin-bottom: 20px;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer .reviews {
-  padding-right: 80px;
+.testimonial .white-box .container .testimonials-from-customers .customer .reviews {
+  padding-right: 50px;
   margin-bottom: 30px;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text {
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text {
   display: grid;
   grid-template-columns: fit-content fit-content;
   grid-template-areas: "img text";
   justify-content: left;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text img {
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text img {
   grid-area: img;
   margin-right: 10px;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text .grid-text {
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text {
   grid-area: text;
 }
-.testimonial .container .white-box .testimonials-from-customers .customer .flex-image-text .grid-text h3 {
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text h3 {
   margin: 0;
 }
-.testimonial .container .white-box .btn-dark {
+.testimonial .white-box .btn-dark {
   font-size: 16px;
   color: white;
   width: 180px;
@@ -1183,12 +1184,12 @@ header .container .menu .main-menu button:hover {
   font-weight: 500;
   display: block;
   margin: auto;
-  margin-bottom: 130px;
+  margin-bottom: 50px;
 }
-.testimonial .container .white-box .btn-dark:hover {
+.testimonial .white-box .btn-dark:hover {
   background-color: #535353;
 }
-.testimonial .container .white-box .btn-dark i {
+.testimonial .white-box .btn-dark i {
   margin-left: 10px;
 }
 

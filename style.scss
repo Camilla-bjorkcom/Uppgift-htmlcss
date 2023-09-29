@@ -1241,18 +1241,20 @@ header {
 
 .testimonial {
     background-color: #F0D082;
-    padding: 30px;
+    padding: 30px 30px 150px 30px;
 
-    .container {
-        display: flex;
-        justify-content: center;
+    .white-box {
+        background-color: white;
+        max-width: 1700px;
+        max-height: fit-content;
+        padding: 0px 30px 100px 30px;
+        // margin-bottom: 150px;
+        margin: auto;
 
-        .white-box {
-            background-color: white;
-            min-width: 1700px;
-            height: fit-content;
-            padding: 0 12%;
-            margin-bottom: 150px;
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
 
             .section-title {
                 text-align: center;
@@ -1281,7 +1283,7 @@ header {
                     }
 
                     .reviews {
-                        padding-right: 80px;
+                        padding-right: 50px;
                         margin-bottom: 30px;
                     }
 
@@ -1310,32 +1312,31 @@ header {
                     }
                 }
             }
-
-            .btn-dark {
-                font-size: 16px;
-                color: white;
-                width: 180px;
-                height: 50px;
-                padding: 10px;
-                border: none;
-                border-radius: 50px;
-                font-weight: 500;
-                display: block;
-                margin: auto;
-                margin-bottom: 130px;
-
-
-                &:hover {
-                    background-color: #535353;
-                }
-
-                i {
-                    margin-left: 10px;
-                }
-
-            }
         }
 
+        .btn-dark {
+            font-size: 16px;
+            color: white;
+            width: 180px;
+            height: 50px;
+            padding: 10px;
+            border: none;
+            border-radius: 50px;
+            font-weight: 500;
+            display: block;
+            margin: auto;
+            margin-bottom: 50px;
+
+
+            &:hover {
+                background-color: #535353;
+            }
+
+            i {
+                margin-left: 10px;
+            }
+
+        }
     }
 }
 
