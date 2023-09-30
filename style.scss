@@ -1462,7 +1462,6 @@ header {
     padding-bottom: 70px;
 
     .container {
-        max-width: min-content;
 
         .upper {
             display: flex;
@@ -1492,11 +1491,7 @@ header {
                 text-align: right;
 
                 .btn-outline {
-                    width: 300px;
-                    height: 50px;
-                    border-radius: 50px;
                     font-weight: 400;
-                    font-size: 16px;
                     margin-top: 35px;
 
                     @media (min-width:500px) {
@@ -1532,6 +1527,7 @@ header {
             }
 
             .article {
+              
                 .img-and-date {
                     position: relative;
 
