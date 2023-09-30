@@ -944,7 +944,6 @@ header {
             }
 
             .why {
-                //varför blir den inte centrerad? 
                 width: fit-content;
                 margin: auto;
                 display: grid;
@@ -1184,16 +1183,16 @@ header {
 
 .our-team {
     background-color: #F0D082;
-    padding: 30px;
+    // padding: 30px;
 
 
     .container {
         .upper {
             display: flex;
-            align-items: center;
+            // align-items: center;
             flex-direction: column;
 
-            @media (min-width: 1600px) {
+            @media (min-width: 1400px) {
                 justify-content: space-between;
                 align-items: end;
                 flex-direction: row;
@@ -1202,14 +1201,14 @@ header {
             .section-title {
                 text-align: center;
 
-                @media (min-width: 1600px) {
+                @media (min-width: 1400px) {
                     text-align: left;
                 }
 
                 h2 {
                     font-size: 28px;
 
-                    @media (min-width: 1600px) {
+                    @media (min-width: 1400px) {
                         font-size: 45px;
                     }
                 }
@@ -1220,7 +1219,6 @@ header {
                 padding-bottom: 90px;
 
                 .btn-outline {
-                    width: 300px;
                     height: 50px;
                     border-radius: 50px;
                     font-weight: 400;
@@ -1228,7 +1226,7 @@ header {
                     margin-top: 35px;
 
                     @media (min-width:500px) {
-                        max-width: 400px;
+                        width: 400px;
                     }
 
                     @media (min-width: 1300px) {
@@ -1256,7 +1254,7 @@ header {
             flex-direction: column;
             gap: 30px;
 
-            @media (min-width: 1600px) {
+            @media (min-width: 1400px) {
                 flex-direction: row;
                 justify-content: space-around;
             }
@@ -1264,7 +1262,7 @@ header {
             .team-intro {
                 display: none;
 
-                @media (min-width:1600px) {
+                @media (min-width:1400px) {
                     display: block;
                 }
 
@@ -1276,8 +1274,35 @@ header {
                 }
             }
 
-            #active-img {
+            #active-team {
                 display: block;
+
+                #active-img {
+                    width: 70vw;
+
+                    @media (min-width:1000px) {
+                        width: 40vw;
+                    }
+                    @media (min-width:1400px) {
+                        width: 100%;
+                    }
+                }
+            }
+
+            #active-team2 {
+                display: block;
+
+                #active-img2 {
+                    width: 70vw;
+
+                    @media (min-width:1000px) {
+                        width: 40vw;
+                    }
+
+                    @media (min-width:1400px) {
+                        width: 100%;
+                    }
+                }
             }
         }
 

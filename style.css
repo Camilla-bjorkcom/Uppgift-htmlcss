@@ -1040,14 +1040,12 @@ header .container .menu .main-menu .btn-yellow:hover {
 
 .our-team {
   background-color: #F0D082;
-  padding: 30px;
 }
 .our-team .container .upper {
   display: flex;
-  align-items: center;
   flex-direction: column;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-team .container .upper {
     justify-content: space-between;
     align-items: end;
@@ -1057,7 +1055,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 .our-team .container .upper .section-title {
   text-align: center;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-team .container .upper .section-title {
     text-align: left;
   }
@@ -1065,7 +1063,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 .our-team .container .upper .section-title h2 {
   font-size: 28px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-team .container .upper .section-title h2 {
     font-size: 45px;
   }
@@ -1075,7 +1073,6 @@ header .container .menu .main-menu .btn-yellow:hover {
   padding-bottom: 90px;
 }
 .our-team .container .upper .button-team .btn-outline {
-  width: 300px;
   height: 50px;
   border-radius: 50px;
   font-weight: 400;
@@ -1084,7 +1081,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 @media (min-width: 500px) {
   .our-team .container .upper .button-team .btn-outline {
-    max-width: 400px;
+    width: 400px;
   }
 }
 @media (min-width: 1300px) {
@@ -1106,7 +1103,7 @@ header .container .menu .main-menu .btn-yellow:hover {
   flex-direction: column;
   gap: 30px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-team .container .images-team {
     flex-direction: row;
     justify-content: space-around;
@@ -1115,7 +1112,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 .our-team .container .images-team .team-intro {
   display: none;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-team .container .images-team .team-intro {
     display: block;
   }
@@ -1126,8 +1123,37 @@ header .container .menu .main-menu .btn-yellow:hover {
   font-size: 22px;
   font-weight: 700;
 }
-.our-team .container .images-team #active-img {
+.our-team .container .images-team #active-team {
   display: block;
+}
+.our-team .container .images-team #active-team #active-img {
+  width: 70vw;
+}
+@media (min-width: 1000px) {
+  .our-team .container .images-team #active-team #active-img {
+    width: 40vw;
+  }
+}
+@media (min-width: 1400px) {
+  .our-team .container .images-team #active-team #active-img {
+    width: 100%;
+  }
+}
+.our-team .container .images-team #active-team2 {
+  display: block;
+}
+.our-team .container .images-team #active-team2 #active-img2 {
+  width: 70vw;
+}
+@media (min-width: 1000px) {
+  .our-team .container .images-team #active-team2 #active-img2 {
+    width: 40vw;
+  }
+}
+@media (min-width: 1400px) {
+  .our-team .container .images-team #active-team2 #active-img2 {
+    width: 100%;
+  }
 }
 .our-team .container .dots {
   padding-top: 50px;
