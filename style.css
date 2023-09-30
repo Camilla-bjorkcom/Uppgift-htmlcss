@@ -122,8 +122,6 @@ body {
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media (min-width: 650px) {
   .btn-dark {
@@ -145,6 +143,11 @@ body {
 }
 .btn-dark i {
   margin-left: 10px;
+}
+
+.btn-parent {
+  text-align: center;
+  padding-bottom: 90px;
 }
 
 header {
@@ -774,10 +777,6 @@ header .container .menu .main-menu .btn-yellow:hover {
 .our-services .container .boxes .active-box {
   background-color: #F9D783;
 }
-.our-services .container .btn-parent {
-  text-align: center;
-  padding-bottom: 90px;
-}
 .our-services .container .btn-parent .btn-outline {
   width: -moz-fit-content;
   width: fit-content;
@@ -988,13 +987,19 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 .projectandcase .container .projects article h3 {
   font-family: "DM sans", "sans-serif";
-  font-size: 22px;
-  padding-top: 35px;
-  padding-bottom: 16px;
+  font-size: 16px;
+  padding-top: 15px;
+  padding-bottom: 8px;
   border-bottom: 1px solid #DAD9D3;
 }
+@media (min-width: 500px) {
+  .projectandcase .container .projects article h3 {
+    font-size: 22px;
+    padding-top: 35px;
+    padding-bottom: 16px;
+  }
+}
 .projectandcase .container .projects article a {
-  padding: 15px;
   display: block;
   text-align: right;
   font-family: "Inter", "sans-serif";
@@ -1003,29 +1008,30 @@ header .container .menu .main-menu .btn-yellow:hover {
   color: #191919;
   text-decoration: none;
 }
+@media (min-width: 500px) {
+  .projectandcase .container .projects article a {
+    padding: 15px;
+  }
+}
 .projectandcase .container .projects article a:hover {
   text-decoration: underline;
 }
 .projectandcase .container .projects article a i {
   margin-left: 3px;
 }
-.projectandcase .container .btn-dark {
-  font-size: 16px;
+.projectandcase .container .btn-parent .btn-dark {
   color: white;
-  width: 250px;
-  height: 50px;
-  border: none;
-  border-radius: 50px;
-  font-weight: 400;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 50px;
 }
-.projectandcase .container .btn-dark:hover {
+@media (min-width: 350px) {
+  .projectandcase .container .btn-parent .btn-dark {
+    width: 250px;
+  }
+}
+.projectandcase .container .btn-parent .btn-dark:hover {
   background-color: #535353;
 }
-.projectandcase .container .btn-dark i {
+.projectandcase .container .btn-parent .btn-dark i {
   margin-left: 10px;
 }
 
