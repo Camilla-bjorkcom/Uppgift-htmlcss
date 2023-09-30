@@ -869,6 +869,7 @@ header {
 
         .btn-parent {
             padding-bottom: 90px;
+
             .btn-outline {
                 width: fit-content;
                 font-weight: 400;
@@ -1282,6 +1283,7 @@ header {
                     @media (min-width:1000px) {
                         width: 40vw;
                     }
+
                     @media (min-width:1400px) {
                         width: 100%;
                     }
@@ -1523,18 +1525,28 @@ header {
             display: grid;
             grid-template-columns: 1fr;
             gap: 70px;
+            width: fit-content;
+            // align-items: center;
+            margin: auto;
 
             @media (min-width: 1600px) {
                 grid-template-columns: repeat(3, 1fr);
             }
 
             .article {
-              
+                width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
                 .img-and-date {
                     position: relative;
+                    width: fit-content;
+            
 
                     .img-news {
                         display: none;
+                        margin: auto;
 
                         @media (min-width: 500px) {
                             display: block;
@@ -1572,7 +1584,7 @@ header {
 .newsletter {
     background-color: #F0EFE9;
     position: relative;
-    padding:50px;
+    padding: 50px;
     align-items: center;
 
     @media (min-width: 1600px) {
