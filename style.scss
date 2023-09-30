@@ -1353,13 +1353,29 @@ header {
 
         .upper {
             display: flex;
-            justify-content: space-between;
-            align-items: end;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 40px;
+
+            @media (min-width:1600px) {
+                justify-content: space-between;
+                align-items: end;
+            }
+
+            
 
             .section-title {
                 margin-bottom: 0;
-            }
+        
+                    h2 {
+                        font-size: 28px;
+        
+                        @media (min-width: 1600px) {
+                            font-size: 45px;
+                        }
+                    }
+                }
+            
 
             .btn-parent {
                 text-align: right;
@@ -1395,11 +1411,14 @@ header {
         }
 
 
-
         .show-articles {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 70px;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 1600px) {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 70px;
+            }
 
             .article {
                 .img-and-date {
