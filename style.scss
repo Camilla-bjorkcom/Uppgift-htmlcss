@@ -765,8 +765,6 @@ header {
 
 
 .our-services {
-    padding: 30px;
-
     background-color: #F0EFE9;
     position: relative;
     z-index: 10;
@@ -775,7 +773,7 @@ header {
         position: absolute;
         right: 0;
         bottom: 0;
-        z-index: 1;
+        z-index: -1;
     }
 
     .container {
@@ -869,30 +867,19 @@ header {
             padding-bottom: 90px;
 
             .btn-outline {
-                width: 300px;
-                height: 50px;
-                border-radius: 50px;
+                width: fit-content;
                 font-weight: 400;
-                font-size: 16px;
                 margin-top: 35px;
 
                 @media (min-width:500px) {
-                    max-width: 400px;
+                    width: 400px;
+                }
+            
+            
+                @media (min-width: 1500px) {
+                    width: 300px;
                 }
 
-                @media (min-width: 1300px) {
-                    width: 200px;
-                    height: 50px;
-                }
-
-                i {
-                    margin-left: 10px;
-                }
-
-                &:hover {
-                    background-color: #e3e3e3;
-                    color: #191919;
-                }
 
             }
         }

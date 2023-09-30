@@ -688,7 +688,6 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 
 .our-services {
-  padding: 30px;
   background-color: #F0EFE9;
   position: relative;
   z-index: 10;
@@ -697,7 +696,7 @@ header .container .menu .main-menu .btn-yellow:hover {
   position: absolute;
   right: 0;
   bottom: 0;
-  z-index: 1;
+  z-index: -1;
 }
 .our-services .container {
   display: flex;
@@ -780,30 +779,20 @@ header .container .menu .main-menu .btn-yellow:hover {
   padding-bottom: 90px;
 }
 .our-services .container .btn-parent .btn-outline {
-  width: 300px;
-  height: 50px;
-  border-radius: 50px;
+  width: -moz-fit-content;
+  width: fit-content;
   font-weight: 400;
-  font-size: 16px;
   margin-top: 35px;
 }
 @media (min-width: 500px) {
   .our-services .container .btn-parent .btn-outline {
-    max-width: 400px;
+    width: 400px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1500px) {
   .our-services .container .btn-parent .btn-outline {
-    width: 200px;
-    height: 50px;
+    width: 300px;
   }
-}
-.our-services .container .btn-parent .btn-outline i {
-  margin-left: 10px;
-}
-.our-services .container .btn-parent .btn-outline:hover {
-  background-color: #e3e3e3;
-  color: #191919;
 }
 
 .choose-us {
