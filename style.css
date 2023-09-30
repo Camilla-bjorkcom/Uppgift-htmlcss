@@ -125,7 +125,7 @@ body {
 }
 @media (min-width: 650px) {
   .btn-dark {
-    max-width: 400px;
+    width: 400px;
   }
 }
 @media (min-width: 1200px) {
@@ -851,6 +851,9 @@ header .container .menu .main-menu .btn-yellow:hover {
   }
 }
 .why-choose-us .container .left .why {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
   display: grid;
   justify-content: center;
   align-items: center;

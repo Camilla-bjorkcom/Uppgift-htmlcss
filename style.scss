@@ -148,7 +148,7 @@ body {
 
 
     @media (min-width:650px) {
-        max-width: 400px;
+        width: 400px;
     }
 
     @media (min-width: 1200px) {
@@ -945,6 +945,8 @@ header {
 
             .why {
                 //varför blir den inte centrerad? 
+                width: fit-content;
+                margin: auto;
                 display: grid;
                 justify-content: center;
                 align-items: center;
