@@ -1165,8 +1165,14 @@ header .container .menu .main-menu button:hover {
   margin-bottom: 20px;
 }
 .testimonial .white-box .container .testimonials-from-customers .customer .reviews {
-  padding-right: 50px;
   margin-bottom: 30px;
+  font-size: 12px;
+}
+@media (min-width: 500px) {
+  .testimonial .white-box .container .testimonials-from-customers .customer .reviews {
+    padding-right: 50px;
+    font-size: 16px;
+  }
 }
 .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text {
   display: grid;
@@ -1174,20 +1180,41 @@ header .container .menu .main-menu button:hover {
   grid-template-areas: "img text";
   justify-content: left;
 }
-.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text img {
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .testimonial-img {
   grid-area: img;
   margin-right: 10px;
+  display: none;
+}
+@media (min-width: 500px) {
+  .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .testimonial-img {
+    display: block;
+  }
 }
 .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text {
   grid-area: text;
 }
 .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text h3 {
   margin: 0;
+  font-size: 16px;
+}
+@media (min-width: 450px) {
+  .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text h3 {
+    font-size: 22px;
+  }
+}
+.testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text .title {
+  font-size: 14px;
+}
+@media (min-width: 450px) {
+  .testimonial .white-box .container .testimonials-from-customers .customer .flex-image-text .grid-text .title {
+    font-size: 16px;
+  }
 }
 .testimonial .white-box .btn-dark {
   font-size: 16px;
   color: white;
-  width: 180px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: 50px;
   padding: 10px;
   border: none;
@@ -1196,6 +1223,11 @@ header .container .menu .main-menu button:hover {
   display: block;
   margin: auto;
   margin-bottom: 50px;
+}
+@media (min-width: 500px) {
+  .testimonial .white-box .btn-dark {
+    width: 180px;
+  }
 }
 .testimonial .white-box .btn-dark:hover {
   background-color: #535353;

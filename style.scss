@@ -1281,7 +1281,7 @@ header {
                     justify-content: space-between;
                     padding: 20px;
                     gap: 100px;
-    
+
                 }
 
                 .customer {
@@ -1297,8 +1297,13 @@ header {
                     }
 
                     .reviews {
-                        padding-right: 50px;
                         margin-bottom: 30px;
+                        font-size: 12px;
+
+                        @media (min-width: 500px) {
+                            padding-right: 50px;
+                            font-size: 16px;
+                        }
                     }
 
                     .flex-image-text {
@@ -1309,16 +1314,36 @@ header {
 
                         justify-content: left;
 
-                        img {
+                        .testimonial-img {
                             grid-area: img;
                             margin-right: 10px;
+                            display: none;
+
+                            @media (min-width:500px) {
+                                display: block;
+                            }
                         }
 
                         .grid-text {
                             grid-area: text;
 
+
+
                             h3 {
                                 margin: 0;
+                                font-size: 16px;
+
+                                @media (min-width:450px) {
+                                    font-size: 22px;
+                                }
+                            }
+
+                            .title {
+                                font-size: 14px;
+
+                                @media (min-width:450px) {
+                                    font-size: 16px;
+                                }
                             }
                         }
 
@@ -1331,7 +1356,7 @@ header {
         .btn-dark {
             font-size: 16px;
             color: white;
-            width: 180px;
+            width: fit-content;
             height: 50px;
             padding: 10px;
             border: none;
@@ -1340,6 +1365,11 @@ header {
             display: block;
             margin: auto;
             margin-bottom: 50px;
+
+            @media (min-width:500px) {
+                width: 180px;
+            }
+            
 
 
             &:hover {
@@ -1374,16 +1404,16 @@ header {
 
             .section-title {
                 margin-bottom: 0;
-        
-                    h2 {
-                        font-size: 28px;
-        
-                        @media (min-width: 1600px) {
-                            font-size: 45px;
-                        }
+
+                h2 {
+                    font-size: 28px;
+
+                    @media (min-width: 1600px) {
+                        font-size: 45px;
                     }
                 }
-            
+            }
+
 
             .btn-parent {
                 text-align: right;
