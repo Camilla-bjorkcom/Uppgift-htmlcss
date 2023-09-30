@@ -169,7 +169,7 @@ body {
 
 .btn-parent {
     text-align: center;
-    padding-bottom: 90px;
+    // padding-bottom: 90px;
 }
 
 header {
@@ -868,6 +868,7 @@ header {
         }
 
         .btn-parent {
+            padding-bottom: 90px;
             .btn-outline {
                 width: fit-content;
                 font-weight: 400;
@@ -1470,6 +1471,7 @@ header {
             margin-bottom: 40px;
 
             @media (min-width:1600px) {
+                flex-direction: row;
                 justify-content: space-between;
                 align-items: end;
             }

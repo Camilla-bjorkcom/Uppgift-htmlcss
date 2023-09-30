@@ -147,7 +147,6 @@ body {
 
 .btn-parent {
   text-align: center;
-  padding-bottom: 90px;
 }
 
 header {
@@ -777,6 +776,9 @@ header .container .menu .main-menu .btn-yellow:hover {
 .our-services .container .boxes .active-box {
   background-color: #F9D783;
 }
+.our-services .container .btn-parent {
+  padding-bottom: 90px;
+}
 .our-services .container .btn-parent .btn-outline {
   width: -moz-fit-content;
   width: fit-content;
@@ -1303,6 +1305,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 @media (min-width: 1600px) {
   .article-news .container .upper {
+    flex-direction: row;
     justify-content: space-between;
     align-items: end;
   }
