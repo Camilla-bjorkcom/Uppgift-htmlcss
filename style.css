@@ -1142,13 +1142,24 @@ header .container .menu .main-menu button:hover {
 }
 .testimonial .white-box .container .testimonials-from-customers {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  gap: 100px;
+  flex-direction: column;
+}
+@media (min-width: 1300px) {
+  .testimonial .white-box .container .testimonials-from-customers {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 100px;
+  }
 }
 .testimonial .white-box .container .testimonials-from-customers .customer {
   margin-top: 50px;
   text-align: left;
+}
+@media (min-width: 1300px) {
+  .testimonial .white-box .container .testimonials-from-customers .customer {
+    width: auto;
+  }
 }
 .testimonial .white-box .container .testimonials-from-customers .customer img {
   margin-bottom: 20px;
