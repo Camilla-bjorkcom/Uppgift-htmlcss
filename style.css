@@ -786,24 +786,18 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 @media (min-width: 500px) {
   .our-services .container .btn-parent .btn-outline {
-    width: 400px;
-  }
-}
-@media (min-width: 1500px) {
-  .our-services .container .btn-parent .btn-outline {
     width: 300px;
   }
 }
 
-.choose-us {
-  padding: 30 0px;
+.why-choose-us {
   position: relative;
 }
-.choose-us .background-box {
+.why-choose-us .background-box {
   display: none;
 }
 @media (min-width: 1600px) {
-  .choose-us .background-box {
+  .why-choose-us .background-box {
     display: block;
     position: absolute;
     background-color: #F0EFE9;
@@ -814,124 +808,141 @@ header .container .menu .main-menu .btn-yellow:hover {
     z-index: -1;
   }
 }
-.choose-us .container {
+.why-choose-us .container {
   display: flex;
   flex-direction: column;
-  gap: 200px;
-}
-@media (min-width: 1600px) {
-  .choose-us .container {
-    flex-direction: row;
-  }
-}
-.choose-us .container .left {
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 1600px) {
-  .choose-us .container .left {
+  .why-choose-us .container {
+    flex-direction: row;
+    align-items: start;
+    gap: 200px;
+  }
+}
+.why-choose-us .container .left {
+  padding: 15px;
+}
+@media (min-width: 1600px) {
+  .why-choose-us .container .left {
+    padding: 0;
     flex: 1.5;
     display: overflow;
   }
 }
-.choose-us .container .left .section-title {
+.why-choose-us .container .left .section-title {
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 15px;
   text-align: center;
 }
 @media (min-width: 1600px) {
-  .choose-us .container .left .section-title {
+  .why-choose-us .container .left .section-title {
+    margin-bottom: 50px;
     text-align: left;
   }
 }
-.choose-us .container .left .section-title h2 {
+.why-choose-us .container .left .section-title h2 {
   font-size: 28px;
 }
 @media (min-width: 1600px) {
-  .choose-us .container .left .section-title h2 {
+  .why-choose-us .container .left .section-title h2 {
     font-size: 45px;
   }
 }
-.choose-us .container .left .why {
+.why-choose-us .container .left .why {
   display: grid;
-  grid-template-columns: max-content max-content;
-  grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-areas: "icon1" "argument1" "icon2" "argument2" "icon3" "argument3" "icon4" "argument4";
+}
+@media (min-width: 500px) {
+  .why-choose-us .container .left .why {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas: "icon1 argument1" "icon2 argument2" "icon3 argument3" "icon4 argument4";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
 @media (min-width: 1600px) {
-  .choose-us .container .left .why {
+  .why-choose-us .container .left .why {
     justify-content: initial;
   }
 }
-.choose-us .container .left .why .icon {
+.why-choose-us .container .left .why .icon {
   border: 1px solid #F0EFE9;
   border-radius: 50px;
   height: 55px;
   width: 55px;
   position: relative;
 }
-.choose-us .container .left .why .icon i {
+.why-choose-us .container .left .why .icon i {
   position: absolute;
   bottom: 20px;
   left: 20px;
 }
-.choose-us .container .left .why .icon:hover {
+.why-choose-us .container .left .why .icon:hover {
   background-color: #191919;
   border: 1px solid #ffffff;
   color: #ffffff;
 }
-.choose-us .container .left .why #icon1 {
+.why-choose-us .container .left .why #icon1 {
   grid-area: icon1;
 }
-.choose-us .container .left .why #icon2 {
+.why-choose-us .container .left .why #icon2 {
   grid-area: icon2;
 }
-.choose-us .container .left .why #icon3 {
+.why-choose-us .container .left .why #icon3 {
   grid-area: icon3;
 }
-.choose-us .container .left .why #icon4 {
+.why-choose-us .container .left .why #icon4 {
   grid-area: icon4;
 }
-.choose-us .container .left .why .argument h3 {
+.why-choose-us .container .left .why .argument h3 {
   margin-top: 20px;
   font-family: "DM sans", "sans-serif";
   font-size: 22px;
   font-weight: 700;
 }
-.choose-us .container .left .why .argument p {
+.why-choose-us .container .left .why .argument p {
   font-size: 0.8em;
 }
 @media (min-width: 850px) {
-  .choose-us .container .left .why .argument p {
+  .why-choose-us .container .left .why .argument p {
     font-size: 1em;
   }
 }
-.choose-us .container .left .why #argument1 {
+.why-choose-us .container .left .why #argument1 {
   grid-area: argument1;
 }
-.choose-us .container .left .why #argument2 {
+.why-choose-us .container .left .why #argument2 {
   grid-area: argument2;
 }
-.choose-us .container .left .why #argument3 {
+.why-choose-us .container .left .why #argument3 {
   grid-area: argument3;
 }
-.choose-us .container .left .why #argument4 {
+.why-choose-us .container .left .why #argument4 {
   grid-area: argument4;
 }
-.choose-us .container .right {
+.why-choose-us .container .right {
   display: none;
 }
 @media (min-width: 1600px) {
-  .choose-us .container .right {
+  .why-choose-us .container .right {
     display: block;
     position: relative;
     flex: 2;
   }
 }
-.choose-us .container .right .chooseus-image {
+.why-choose-us .container .right .chooseus-image {
   display: none;
 }
 @media (min-width: 1600px) {
-  .choose-us .container .right .chooseus-image {
+  .why-choose-us .container .right .chooseus-image {
     display: block;
     position: absolute;
     left: -10px;
