@@ -456,8 +456,6 @@ header {
 }
 
 .features {
-    padding: 30px;
-
 
     .container {
         border: 1.5px solid #DAD9D3;
@@ -502,16 +500,8 @@ header {
 
 
             .btn-yellow {
-                background-color: #F9D783;
-                width: 300px;
-                height: 50px;
-                border: none;
-                border-radius: 50px;
                 font-weight: 400;
-                font-size: 16px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-top: 20px;
+                margin-top: 25px;
 
                 @media (min-width:500px) {
                     max-width: 400px;
@@ -519,12 +509,6 @@ header {
 
                 @media (min-width: 1200px) {
                     width: 480px;
-                    height: 50px;
-                    border: none;
-                    border-radius: 50px;
-                    margin-left: 0px;
-                    margin-right: 30px;
-                    text-align: center;
                 }
 
                 i {
