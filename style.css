@@ -351,7 +351,7 @@ header .container .menu .main-menu button:hover {
 .brands {
   padding: 30px;
 }
-.brands .container {
+.brands .container .img-brands {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -359,7 +359,7 @@ header .container .menu .main-menu button:hover {
   padding-bottom: 40px;
 }
 @media (min-width: 650px) {
-  .brands .container {
+  .brands .container .img-brands {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     padding-top: 40px;
@@ -367,13 +367,13 @@ header .container .menu .main-menu button:hover {
   }
 }
 @media (min-width: 1300px) {
-  .brands .container {
+  .brands .container .img-brands {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-.brands .container img {
+.brands .container .img-brands img {
   height: -moz-max-content;
   height: max-content;
   width: -moz-max-content;
@@ -381,19 +381,19 @@ header .container .menu .main-menu button:hover {
   margin: auto;
 }
 @media (min-width: 1300px) {
-  .brands .container img {
+  .brands .container .img-brands img {
     padding: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
 @media (min-width: 1300px) {
-  .brands .container {
+  .brands .container .img-brands {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .brands .container img {
+  .brands .container .img-brands img {
     padding: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
@@ -1512,4 +1512,4 @@ footer .container .lower-pt .flex .social-media {
 }
 footer .container .lower-pt .flex .social-media a {
   margin-right: 15px;
-}
+}/*# sourceMappingURL=style.css.map */
