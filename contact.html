@@ -98,12 +98,30 @@
         <section class="contact-form">
             <div class="container">
                 <div class="headline-form section-title">
-                    <h2>Leave us a message for any information</h2>
+                    <h2>Leave us a message for any information.</h2>
                 </div>
-                <div class="form">
-                    <form method="post">
-                        <label for="Name">Name</label>
-                        <input type="text" name="Name">
+                <div class="form-wrapper">
+                    <form id="form" method="post">
+
+                        <div class="mb-3">
+                            <label for="name">
+                            </label>
+                            <input id="name" type="text" name="Name" placeholder="Name*" class="form-input" tabindex="1" class="p-2">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email">
+                            </label>
+                            <input id="email" type="email" name="Email" placeholder="Email*" class="form-input" tabindex="2" class="p-2">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="message">
+                            </label>
+                            <textarea name="message" id="message" placeholder="Your Message*" class="form-input" tabindex="3" class="p-2"></textarea>
+                        </div>
+
+                        <button class="btn-yellow btn btn-warning form-input" type="button">Send Message<a href="login.html"></a><i class="fa-regular fa-arrow-up-right"></i></a></button>
                     </form>
                 </div>
             </div>
@@ -114,7 +132,7 @@
         </section>
 
     </main>
-    
+
     <footer>
         <div class="position-line-img">
             <div class="border-line"></div>

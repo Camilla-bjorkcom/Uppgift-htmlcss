@@ -271,7 +271,7 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 
 .connect {
-  padding: 30px;
+  padding: 100px 30px;
   background-color: #F0EFE9;
   position: relative;
   z-index: 0;
@@ -341,7 +341,7 @@ header .container .menu .main-menu .btn-yellow:hover {
   margin: 0;
   position: absolute;
   left: 40px;
-  top: 10px;
+  top: 5px;
   font-size: x-large;
 }
 .contact-info .container .flex-box .contact-box .contact-headline {
@@ -353,7 +353,46 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 
 .contact-form {
-  margin: 50px 0;
+  margin: 100px 0;
+}
+.contact-form .container {
+  background-color: #F0EFE9;
+  padding: 90px;
+}
+.contact-form .container .headline-form h2 {
+  text-align: center;
+  max-width: 40%;
+  margin: 0 auto;
+}
+.contact-form .container .form-wrapper #form label {
+  display: block;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.contact-form .container .form-wrapper #form .form-input {
+  width: 80%;
+  display: block;
+  padding: 15px;
+  padding-left: 30px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: none;
+}
+.contact-form .container .form-wrapper #form textarea {
+  resize: none;
+  height: 150px;
+}
+.contact-form .container .form-wrapper #form .btn-yellow {
+  margin-top: 40px;
+}
+
+.map {
+  padding: 0;
+  margin: 0;
+}
+.map .google-map {
+  padding: 0;
+  margin: 0;
 }
 .map .google-map iframe {
   width: 100vw;
@@ -1012,6 +1051,12 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 .why-choose-us .container .left .why .argument p {
   font-size: 0.8em;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .why-choose-us .container .left .why .argument p {
+    text-align: left;
+  }
 }
 @media (min-width: 850px) {
   .why-choose-us .container .left .why .argument p {
@@ -1056,7 +1101,7 @@ header .container .menu .main-menu .btn-yellow:hover {
   padding: 30px;
 }
 .projectandcase .container {
-  padding: 30px;
+  padding: 30px 0;
 }
 .projectandcase .container .section-title {
   text-align: center;
@@ -1794,4 +1839,7 @@ footer .container .lower-pt .flex .social-media a {
   margin-right: 15px;
   text-decoration: none;
   color: #DAD9D3;
+}
+footer .container .lower-pt .flex .social-media a:hover {
+  color: #666666;
 }
