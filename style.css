@@ -894,7 +894,7 @@ header .container .menu .main-menu .btn-yellow:hover {
     background-color: #F0EFE9;
     height: 430px;
     width: 55%;
-    bottom: 100px;
+    bottom: 0px;
     right: 0;
     z-index: -1;
   }
@@ -930,8 +930,9 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 @media (min-width: 1600px) {
   .why-choose-us .container .left .section-title {
-    margin-bottom: 50px;
+    margin-bottom: 0px;
     text-align: left;
+    margin-top: 60px;
   }
 }
 .why-choose-us .container .left .section-title h2 {
@@ -973,6 +974,7 @@ header .container .menu .main-menu .btn-yellow:hover {
   height: 55px;
   width: 55px;
   position: relative;
+  margin: 0 auto;
 }
 .why-choose-us .container .left .why .icon i {
   position: absolute;
@@ -1001,6 +1003,12 @@ header .container .menu .main-menu .btn-yellow:hover {
   font-family: "DM sans", "sans-serif";
   font-size: 22px;
   font-weight: 700;
+  text-align: center;
+}
+@media (min-width: 500px) {
+  .why-choose-us .container .left .why .argument h3 {
+    text-align: left;
+  }
 }
 .why-choose-us .container .left .why .argument p {
   font-size: 0.8em;
@@ -1631,7 +1639,7 @@ footer .container {
 }
 @media (min-width: 850px) {
   footer .container {
-    padding: 70px;
+    padding: 70px 0;
     padding-bottom: 0px;
   }
 }
@@ -1678,8 +1686,28 @@ footer .container .upper-pt .logo p {
     margin-right: 30px;
   }
 }
+@media (min-width: 1400px) {
+  footer .container .upper-pt .logo p {
+    padding-right: 120px;
+  }
+}
+footer .container .upper-pt .logo .logo-img {
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 1400px) {
+  footer .container .upper-pt .logo .logo-img {
+    justify-content: left;
+  }
+}
 footer .container .upper-pt .logo .about-us-text {
   margin-top: 30px;
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  footer .container .upper-pt .logo .about-us-text {
+    text-align: left;
+  }
 }
 footer .container .upper-pt .logo .about-us-text p {
   margin: 0px;
@@ -1693,8 +1721,29 @@ footer .container .upper-pt .informative-text {
     text-align: left;
   }
 }
+footer .container .upper-pt .informative-text a {
+  text-decoration: none;
+  color: #DAD9D3;
+}
+footer .container .upper-pt .informative-text a:hover {
+  text-decoration: underline;
+}
+footer .container .upper-pt .informative-text a p {
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  footer .container .upper-pt .informative-text a p {
+    text-align: left;
+  }
+}
 footer .container .upper-pt .informative-text h3 {
+  text-align: center;
   margin-bottom: 30px;
+}
+@media (min-width: 1400px) {
+  footer .container .upper-pt .informative-text h3 {
+    text-align: left;
+  }
 }
 footer .container .upper-pt #company {
   grid-area: company;
@@ -1743,4 +1792,6 @@ footer .container .lower-pt .flex .social-media {
 }
 footer .container .lower-pt .flex .social-media a {
   margin-right: 15px;
+  text-decoration: none;
+  color: #DAD9D3;
 }

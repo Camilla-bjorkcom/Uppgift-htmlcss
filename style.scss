@@ -996,7 +996,7 @@ header {
             background-color: #F0EFE9;
             height: 430px;
             width: 55%;
-            bottom: 100px;
+            bottom: 0px;
             right: 0;
             z-index: -1;
         }
@@ -1030,8 +1030,9 @@ header {
                 text-align: center;
 
                 @media (min-width: 1600px) {
-                    margin-bottom: 50px;
+                    margin-bottom: 0px;
                     text-align: left;
+                    margin-top: 60px;
                 }
 
                 h2 {
@@ -1085,6 +1086,7 @@ header {
                     height: 55px;
                     width: 55px;
                     position: relative;
+                    margin: 0 auto;
 
 
                     i {
@@ -1123,6 +1125,12 @@ header {
                         font-family: 'DM sans', 'sans-serif';
                         font-size: 22px;
                         font-weight: 700;
+                        text-align: center;
+
+                        @media (min-width:500px) {
+                            text-align: left;
+                        }
+
                     }
 
                     p {
@@ -1823,7 +1831,7 @@ footer {
         padding-bottom: 0px;
 
         @media (min-width:850px) {
-            padding: 70px;
+            padding: 70px 0;
             padding-bottom: 0px;
         }
 
@@ -1870,13 +1878,32 @@ footer {
                 p {
                     margin-top: 0px;
 
+
                     @media (min-width:850px) {
                         margin-right: 30px;
+                    }
+
+                    @media (min-width:1400px) {
+                        padding-right: 120px;
+                    }
+                }
+
+                .logo-img {
+                    display: flex;
+                    justify-content: center;
+
+                    @media (min-width:1400px) {
+                        justify-content: left;
                     }
                 }
 
                 .about-us-text {
                     margin-top: 30px;
+                    text-align: center;
+
+                    @media (min-width:1400px) {
+                        text-align: left;
+                    }
 
                     p {
                         margin: 0px;
@@ -1892,8 +1919,30 @@ footer {
                     text-align: left;
                 }
 
+                a {
+                    text-decoration: none;
+                    color: #DAD9D3;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+
+                    p {
+                        text-align: center;
+
+                        @media (min-width:1400px) {
+                            text-align: left;
+                        }
+                    }
+                }
+
                 h3 {
+                    text-align: center;
                     margin-bottom: 30px;
+
+                    @media (min-width:1400px) {
+                        text-align: left;
+                    }
                 }
             }
 
@@ -1948,12 +1997,10 @@ footer {
                 .social-media {
                     padding: 0px;
 
-                    @media (min-width:1400px) {
-                        // padding: 20px;
-                    }
-
                     a {
                         margin-right: 15px;
+                        text-decoration: none;
+                        color: #DAD9D3;
                     }
 
                 }
