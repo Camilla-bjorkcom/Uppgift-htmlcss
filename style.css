@@ -322,27 +322,51 @@ header .container .menu .main-menu .btn-yellow:hover {
 .contact-info .container .flex-box {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .contact-info .container .flex-box {
+    flex-direction: row;
+  }
 }
 .contact-info .container .flex-box .contact-box {
   border: 1px solid rgb(156, 156, 156);
-  width: 420px;
+  width: -moz-fit-content;
+  width: fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 50px;
   display: grid;
   grid-template-columns: auto fit-content;
   grid-template-rows: auto fit-content;
   grid-template-areas: "icon headline" "icon information";
   align-items: start;
   position: relative;
+  gap: 10px;
+  margin: 0 auto;
+}
+@media (min-width: 1200px) {
+  .contact-info .container .flex-box .contact-box {
+    -moz-column-gap: normal;
+         column-gap: normal;
+    width: 420px;
+    padding: 50px;
+  }
 }
 .contact-info .container .flex-box .contact-box .contact-icon {
   grid-area: icon;
   margin: 0;
   position: absolute;
-  left: 40px;
+  left: -5px;
   top: 5px;
   font-size: x-large;
+}
+@media (min-width: 1400px) {
+  .contact-info .container .flex-box .contact-box .contact-icon {
+    left: 40px;
+    top: 5px;
+  }
 }
 .contact-info .container .flex-box .contact-box .contact-headline {
   grid-area: headline;
@@ -363,6 +387,9 @@ header .container .menu .main-menu .btn-yellow:hover {
   text-align: center;
   max-width: 40%;
   margin: 0 auto;
+}
+.contact-form .container .section-title {
+  margin-bottom: 50px;
 }
 .contact-form .container .form-wrapper #form label {
   display: block;

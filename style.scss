@@ -360,12 +360,19 @@ header {
         .flex-box {
             display: flex;
             justify-content: space-around;
+            gap:20px;
+            flex-direction: column;
+            align-items: center;
+
+            @media (min-width: 1200px) {
+                flex-direction: row;
+            }
 
             .contact-box {
                 border: 1px solid rgb(156, 156, 156);
-                width: 420px;
+                width: fit-content;
                 height: fit-content;
-                padding: 50px;
+                // padding: 50px;
                 display: grid;
                 grid-template-columns: auto fit-content;
                 grid-template-rows: auto fit-content;
@@ -373,16 +380,31 @@ header {
                     "icon information";
                 align-items: start;
                 position: relative;
+                gap: 10px;
+                margin: 0 auto;
+                // column-gap: 40px;
+
+                @media (min-width:1200px) {
+                    column-gap: normal;
+                    width: 420px;
+                    padding: 50px;
+                    
+                }
 
 
                 .contact-icon {
                     grid-area: icon;
                     margin: 0;
                     position: absolute;
-                    left: 40px;
+                    left: -5px;
                     top: 5px;
                     font-size: x-large;
 
+                    @media (min-width:1400px)
+                    {
+                        left: 40px;
+                        top: 5px;
+                    }
                 }
 
                 .contact-headline {
@@ -414,6 +436,10 @@ header {
                 margin: 0 auto;
 
             }
+        }
+
+        .section-title {
+            margin-bottom: 50px;
         }
 
         .form-wrapper {
