@@ -832,21 +832,36 @@ header .container .menu .main-menu .btn-yellow {
     align-items: unset;
   }
 }
+.our-services .container .title {
+  text-align: center;
+}
+@media (min-width: 1600px) {
+  .our-services .container .title {
+    text-align: left;
+  }
+}
 .our-services .container h2 {
   font-size: 28px;
+  text-align: center;
 }
 @media (min-width: 576px) {
   .our-services .container h2 {
     font-size: 45px;
   }
 }
+@media (min-width: 1600px) {
+  .our-services .container h2 {
+    text-align: left;
+  }
+}
 .our-services .container .boxes {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .our-services .container .boxes {
     flex-direction: row;
   }
@@ -854,16 +869,16 @@ header .container .menu .main-menu .btn-yellow {
 .our-services .container .boxes .box {
   background-color: #FFFFFF;
   position: relative;
-  flex-basis: 340px;
-  padding: 30px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  padding: 40px;
+  width: -moz-fit-content;
+  width: fit-content;
 }
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
   .our-services .container .boxes .box {
     margin-right: 20px;
     height: 310px;
     width: 380px;
+    padding: 30px;
   }
 }
 .our-services .container .boxes .box h3 {
@@ -876,11 +891,18 @@ header .container .menu .main-menu .btn-yellow {
   row-gap: 5px;
   font-family: "inter", "sans-serif";
   font-size: 16px;
+  padding: 20px;
 }
 .our-services .container .boxes .box .round-btn {
   position: absolute;
-  bottom: 40px;
-  right: 30px;
+  bottom: 20px;
+  right: 20px;
+}
+@media (min-width: 1600px) {
+  .our-services .container .boxes .box .round-btn {
+    bottom: 40px;
+    right: 30px;
+  }
 }
 .our-services .container .boxes .box .active-btn {
   background-color: #ffffff;
