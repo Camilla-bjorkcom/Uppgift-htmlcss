@@ -329,10 +329,6 @@ header {
                 font-size: 20px;
                 opacity: 70%;
                 text-align: center;
-
-                @media (min-width: 1450px) {
-                    text-align: left;
-                }
             }
 
             h1 {
@@ -340,11 +336,11 @@ header {
                 font-size: 30px;
                 text-align: center;
 
-                @media (min-width:560px) {
+                @media (min-width:576px) {
                     font-size: 50px;
                 }
 
-                @media (min-width: 1500px) {
+                @media (min-width: 1400px) {
                     text-align: left;
                     font-size: 56px;
                 }
@@ -370,9 +366,9 @@ header {
 
             .contact-box {
                 border: 1px solid rgb(156, 156, 156);
-                width: fit-content;
+                width: 70vw;
                 height: fit-content;
-                // padding: 50px;
+                padding: 30px 0;
                 display: grid;
                 grid-template-columns: auto fit-content;
                 grid-template-rows: auto fit-content;
@@ -382,13 +378,15 @@ header {
                 position: relative;
                 gap: 10px;
                 margin: 0 auto;
-                // column-gap: 40px;
+
+                @media (min-width:576px) {
+                    padding: 50px;
+                }
 
                 @media (min-width:1200px) {
                     column-gap: normal;
                     width: 420px;
                     padding: 50px;
-                    
                 }
 
 
@@ -396,9 +394,14 @@ header {
                     grid-area: icon;
                     margin: 0;
                     position: absolute;
-                    left: -5px;
+                    right: 15px;
                     top: 5px;
                     font-size: x-large;
+                    display:none;
+
+                    @media (min-width:576px) {
+                        display: block;
+                    }
 
                     @media (min-width:1400px)
                     {
@@ -427,7 +430,11 @@ header {
 
     .container {
         background-color: #F0EFE9;
+        padding: 40px 0;
+
+        @media (min-width: 1400px) {
         padding: 90px;
+        }
 
         .headline-form {
             h2 {

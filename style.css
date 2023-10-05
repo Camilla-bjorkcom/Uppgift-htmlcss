@@ -294,22 +294,17 @@ header .container .menu .main-menu .btn-yellow:hover {
   opacity: 70%;
   text-align: center;
 }
-@media (min-width: 1450px) {
-  .connect .container .headline p {
-    text-align: left;
-  }
-}
 .connect .container .headline h1 {
   font-family: "DM sans", "sans-serif";
   font-size: 30px;
   text-align: center;
 }
-@media (min-width: 560px) {
+@media (min-width: 576px) {
   .connect .container .headline h1 {
     font-size: 50px;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .connect .container .headline h1 {
     text-align: left;
     font-size: 56px;
@@ -333,10 +328,10 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 .contact-info .container .flex-box .contact-box {
   border: 1px solid rgb(156, 156, 156);
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 70vw;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 30px 0;
   display: grid;
   grid-template-columns: auto fit-content;
   grid-template-rows: auto fit-content;
@@ -345,6 +340,11 @@ header .container .menu .main-menu .btn-yellow:hover {
   position: relative;
   gap: 10px;
   margin: 0 auto;
+}
+@media (min-width: 576px) {
+  .contact-info .container .flex-box .contact-box {
+    padding: 50px;
+  }
 }
 @media (min-width: 1200px) {
   .contact-info .container .flex-box .contact-box {
@@ -358,9 +358,15 @@ header .container .menu .main-menu .btn-yellow:hover {
   grid-area: icon;
   margin: 0;
   position: absolute;
-  left: -5px;
+  right: 15px;
   top: 5px;
   font-size: x-large;
+  display: none;
+}
+@media (min-width: 576px) {
+  .contact-info .container .flex-box .contact-box .contact-icon {
+    display: block;
+  }
 }
 @media (min-width: 1400px) {
   .contact-info .container .flex-box .contact-box .contact-icon {
@@ -381,7 +387,12 @@ header .container .menu .main-menu .btn-yellow:hover {
 }
 .contact-form .container {
   background-color: #F0EFE9;
-  padding: 90px;
+  padding: 40px 0;
+}
+@media (min-width: 1400px) {
+  .contact-form .container {
+    padding: 90px;
+  }
 }
 .contact-form .container .headline-form h2 {
   text-align: center;
