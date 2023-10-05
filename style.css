@@ -359,19 +359,13 @@ header .container .menu .main-menu .btn-yellow:hover {
   margin: 0;
   position: absolute;
   right: 15px;
-  top: 5px;
+  top: 3px;
   font-size: x-large;
   display: none;
 }
 @media (min-width: 576px) {
   .contact-info .container .flex-box .contact-box .contact-icon {
     display: block;
-  }
-}
-@media (min-width: 1400px) {
-  .contact-info .container .flex-box .contact-box .contact-icon {
-    left: 40px;
-    top: 5px;
   }
 }
 .contact-info .container .flex-box .contact-box .contact-headline {
