@@ -534,7 +534,7 @@ header .container .menu .main-menu .btn-yellow {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-@media (min-width: 650px) {
+@media (min-width: 576px) {
   .brands .container .img-brands {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -542,7 +542,7 @@ header .container .menu .main-menu .btn-yellow {
     padding-bottom: 40px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1200px) {
   .brands .container .img-brands {
     display: flex;
     justify-content: center;
@@ -926,7 +926,7 @@ header .container .menu .main-menu .btn-yellow {
   font-weight: 400;
   margin-top: 35px;
 }
-@media (min-width: 500px) {
+@media (min-width: 576px) {
   .our-services .container .btn-parent .btn-outline {
     width: 300px;
   }

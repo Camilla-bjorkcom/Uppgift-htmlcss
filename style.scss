@@ -635,14 +635,14 @@ header {
             padding-top: 40px;
             padding-bottom: 40px;
 
-            @media (min-width: 650px) {
+            @media (min-width: 576px) {
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: 1fr 1fr 1fr;
                 padding-top: 40px;
                 padding-bottom: 40px;
             }
 
-            @media (min-width:1300px) {
+            @media (min-width:1200px) {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -1052,7 +1052,7 @@ header {
                 font-weight: 400;
                 margin-top: 35px;
 
-                @media (min-width: 500px) {
+                @media (min-width: 576px) {
                     width: 300px;
                 }
             }
