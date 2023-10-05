@@ -82,7 +82,7 @@ body {
     border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 
 
     @media (min-width:576px) {
@@ -102,7 +102,8 @@ body {
     }
 
     &:hover {
-        background-color: #f4e4bc;
+        background-color: #191919;
+        color: #DAD9D3;
     }
 }
 
@@ -112,7 +113,7 @@ body {
     border-radius: 50px;
     font-weight: 400;
     font-size: 16px;
-    transition: background-color 0.3s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 
     @media (min-width:576px) {
         width: 400px;
@@ -128,8 +129,8 @@ body {
     }
 
     &:hover {
-        background-color: #424242;
-        color: #e8e8e8;
+        background-color: #191919;
+        color: #DAD9D3;
     }
 
 }
@@ -288,15 +289,11 @@ header {
                 }
 
                 .btn-yellow {
-                    background-color: #F9D783;
                     width: 125px;
                     height: 50px;
                     margin-top: 15px;
                     font-weight: 400;
 
-                    &:hover {
-                        background-color: #f4e4bc;
-                    }
                 }
             }
 
@@ -525,7 +522,7 @@ header {
                     font-size: 30px;
                     text-align: center;
 
-                    @media (min-width:560px) {
+                    @media (min-width:576px) {
                         font-size: 50px;
                     }
 
@@ -533,7 +530,7 @@ header {
                         font-size: 80px;
                     }
 
-                    @media (min-width: 1500px) {
+                    @media (min-width: 1400px) {
                         text-align: left;
                         font-size: 90px;
                     }
@@ -546,7 +543,7 @@ header {
                     opacity: 70%;
                     text-align: center;
 
-                    @media (min-width: 1450px) {
+                    @media (min-width: 1400px) {
                         text-align: left;
                     }
                 }
@@ -560,7 +557,7 @@ header {
                 flex-direction: column;
                 align-items: center;
 
-                @media (min-width: 1500px) {
+                @media (min-width: 1400px) {
                     text-align: left;
                     display: block;
                 }
@@ -568,50 +565,45 @@ header {
                 .btn-yellow {
                     font-weight: 400;
                     margin-bottom: 15px;
+                    margin-right: 0;
 
-
-                    @media (min-width:500px) {
-                        width: 400px;
-                    }
-
-                    @media (min-width: 1500px) {
+                    @media (min-width: 1400px) {
                         margin-right: 15px;
                         margin-bottom: 0;
                         width: 200px;
-                        height: 50px;
                     }
 
-                    i {
-                        margin-left: 10px;
-                    }
+                    // i {
+                    //     margin-left: 10px;
+                    // }
 
-                    &:hover {
-                        background-color: #f4e4bc;
-                    }
+                    // &:hover {
+                    //     background-color: #f4e4bc;
+                    // }
                 }
 
-                .btn-outline {
-                    width: 180px;
-                    height: 50px;
-                    border-radius: 50px;
-                    font-weight: 400;
-                    font-size: 16px;
+                // .btn-outline {
+                //     // width: 180px;
+                //     // height: 50px;
+                //     // border-radius: 50px;
+                //     // font-weight: 400;
+                //     // font-size: 16px;
 
-                    @media (min-width:500px) {
-                        width: 400px;
-                    }
+                //     // @media (min-width:500px) {
+                //     //     width: 400px;
+                //     // }
 
 
-                    @media (min-width: 1500px) {
-                        width: 200px;
-                        height: 50px;
-                    }
+                //     // @media (min-width: 1400px) {
+                //     //      width: 200px;
+                //     //     height: 50px;
+                //     //  }
 
-                    i {
-                        margin-left: 10px;
-                    }
+                //     // i {
+                //     //     margin-left: 10px;
+                //     // }
 
-                }
+                // }
             }
 
 
@@ -622,7 +614,7 @@ header {
             align-items: end;
             margin-right: -50px;
 
-            @media (min-width: 1300px) {
+            @media (min-width: 1400px) {
                 display: block;
 
             }
