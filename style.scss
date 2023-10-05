@@ -58,21 +58,20 @@ body {
 }
 
 
-.round-button {
+.round-btn {
+    background-color: #191919;
+    color: #DAD9D3;
     border: 1px solid #191919;
     border-radius: 100%;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
+    width: 55px;
+    height: 55px;
     transition: background-color 0.2s ease-in-out;
 
     &:hover {
-        background-color: #191919;
-        border: 1px solid #ffffff;
-        color: #ffffff;
+        background-color: #DAD9D3;
+        color: #191919;
     }
 }
-
 
 .btn-yellow {
     background-color: #F9D783;
@@ -80,7 +79,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 50px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 16px;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 
@@ -142,7 +141,7 @@ body {
     border-radius: 50px;
     font-weight: 400;
     font-size: 16px;
-    transition: background-color 0.2s ease-in-out;
+    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 
     @media (min-width:576px) {
         width: 400px;
@@ -161,6 +160,11 @@ body {
 
     i {
         margin-left: 10px;
+    }
+
+    &:hover {
+        background-color: #DAD9D3;
+        color: #191919;
     }
 }
 
@@ -293,7 +297,6 @@ header {
                     height: 50px;
                     margin-top: 15px;
                     font-weight: 400;
-
                 }
             }
 
@@ -356,7 +359,7 @@ header {
         .flex-box {
             display: flex;
             justify-content: space-around;
-            gap:20px;
+            gap: 20px;
             flex-direction: column;
             align-items: center;
 
@@ -372,7 +375,7 @@ header {
                 display: grid;
                 grid-template-columns: auto fit-content;
                 grid-template-rows: auto fit-content;
-                grid-template-areas: 
+                grid-template-areas:
                     "icon headline"
                     "icon information";
                 align-items: start;
@@ -398,7 +401,7 @@ header {
                     right: 15px;
                     top: 3px;
                     font-size: x-large;
-                    display:none;
+                    display: none;
 
                     @media (min-width:576px) {
                         display: block;
@@ -428,7 +431,7 @@ header {
         padding: 40px 0;
 
         @media (min-width: 1400px) {
-        padding: 90px;
+            padding: 90px;
         }
 
         .headline-form {
@@ -709,10 +712,6 @@ header {
                 text-align: center;
                 font-size: 28px;
 
-                @media (min-width: 650px) {
-                    font-size: 45px;
-                }
-
                 @media (min-width: 1200px) {
                     text-align: left;
                 }
@@ -720,24 +719,11 @@ header {
 
 
             .btn-yellow {
-                font-weight: 400;
                 margin: auto;
                 margin-top: 25px;
 
-                @media (min-width:500px) {
-                    max-width: 400px;
-                }
-
-                @media (min-width: 1200px) {
+                @media (min-width: 1400px) {
                     width: 480px;
-                }
-
-                i {
-                    margin-left: 10px;
-                }
-
-                &:hover {
-                    background-color: #f4e4bc;
                 }
             }
         }
@@ -809,7 +795,7 @@ header {
             img {
                 display: none;
 
-                @media (min-width: 650px) {
+                @media (min-width: 576px) {
                     height: 615px;
                     max-width: 500px;
                     display: block;
@@ -824,7 +810,7 @@ header {
                 max-width: 400px;
                 display: none;
 
-                @media (min-width: 650px) {
+                @media (min-width: 576px) {
                     display: block;
                     width: 340px;
                     height: 180px;
@@ -839,7 +825,6 @@ header {
                     gap: 10px;
                     bottom: 50px;
                     left: -50px;
-
                     align-items: center;
                     justify-content: flex-start;
                 }
@@ -858,7 +843,7 @@ header {
             width: fit-content;
             padding: 15px;
 
-            @media (min-width:1024px) {
+            @media (min-width:992px) {
                 padding: 0;
                 text-align: left;
                 align-items: left;
@@ -884,16 +869,16 @@ header {
                 margin: auto;
                 margin-top: 120px;
 
-                @media (min-width:425px) {
+                @media (min-width:576px) {
                     flex-direction: row;
                 }
 
-                @media (min-width:1024px) {
+                @media (min-width:992px) {
                     align-items: center;
                     justify-content: left;
                 }
 
-                @media (min-width:1500px) {
+                @media (min-width:1400px) {
                     margin: 0;
                     margin-top: 70px;
                     align-items: left;
@@ -909,6 +894,17 @@ header {
                         color: #bebebe;
                     }
 
+                }
+
+                .round-btn {
+                    background-color: transparent;
+                    color: #191919;
+                    transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+
+                    &:hover {
+                        background-color: #191919;
+                        color: #DAD9D3;
+                    }
                 }
             }
         }
@@ -954,14 +950,14 @@ header {
         align-items: center;
 
 
-        @media (min-width: 1600px) {
+        @media (min-width: 1400px) {
             align-items: unset;
         }
 
         h2 {
             font-size: 28px;
 
-            @media (min-width: 650px) {
+            @media (min-width: 576px) {
                 font-size: 45px;
             }
 
@@ -973,7 +969,7 @@ header {
             flex-direction: column;
             gap: 20px;
 
-            @media (min-width:1600px) {
+            @media (min-width:1400px) {
                 flex-direction: row;
             }
 
@@ -985,7 +981,7 @@ header {
                 flex-shrink: 0;
                 flex-grow: 0;
 
-                @media (min-width:1600px) {
+                @media (min-width:1400px) {
                     margin-right: 20px;
                     height: 310px;
                     width: 380px;
@@ -1005,25 +1001,21 @@ header {
                     font-size: 16px;
                 }
 
-                .round-button {
-                    background-color: #191919;
-                    color: #DAD9D3;
+                .round-btn {
                     position: absolute;
                     bottom: 40px;
                     right: 30px;
-                    width: 55px;
-                    height: 55px;
-
-                    &:hover {
-                        background-color: #e3e3e3;
-                        color: #191919;
-                    }
                 }
 
                 .active-btn {
                     background-color: #ffffff;
                     color: #191919;
                     border: none;
+
+                    &:hover {
+                        background-color: #191919;
+                        color: #DAD9D3;
+                    }
                 }
             }
 

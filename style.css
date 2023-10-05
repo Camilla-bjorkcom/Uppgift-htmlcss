@@ -47,18 +47,18 @@ body {
   font-size: 16px;
 }
 
-.round-button {
+.round-btn {
+  background-color: #191919;
+  color: #DAD9D3;
   border: 1px solid #191919;
   border-radius: 100%;
-  width: 50px;
-  height: 50px;
-  background-color: transparent;
+  width: 55px;
+  height: 55px;
   transition: background-color 0.2s ease-in-out;
 }
-.round-button:hover {
-  background-color: #191919;
-  border: 1px solid #ffffff;
-  color: #ffffff;
+.round-btn:hover {
+  background-color: #DAD9D3;
+  color: #191919;
 }
 
 .btn-yellow {
@@ -67,7 +67,7 @@ body {
   height: 50px;
   border: none;
   border-radius: 50px;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 16px;
   transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
@@ -127,7 +127,7 @@ body {
   border-radius: 50px;
   font-weight: 400;
   font-size: 16px;
-  transition: background-color 0.2s ease-in-out;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 }
 @media (min-width: 576px) {
   .btn-dark {
@@ -149,6 +149,10 @@ body {
 }
 .btn-dark i {
   margin-left: 10px;
+}
+.btn-dark:hover {
+  background-color: #DAD9D3;
+  color: #191919;
 }
 
 .btn-parent {
@@ -605,36 +609,19 @@ header .container .menu .main-menu .btn-yellow {
   text-align: center;
   font-size: 28px;
 }
-@media (min-width: 650px) {
-  .features .container .section-title h2 {
-    font-size: 45px;
-  }
-}
 @media (min-width: 1200px) {
   .features .container .section-title h2 {
     text-align: left;
   }
 }
 .features .container .section-title .btn-yellow {
-  font-weight: 400;
   margin: auto;
   margin-top: 25px;
 }
-@media (min-width: 500px) {
-  .features .container .section-title .btn-yellow {
-    max-width: 400px;
-  }
-}
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
   .features .container .section-title .btn-yellow {
     width: 480px;
   }
-}
-.features .container .section-title .btn-yellow i {
-  margin-left: 10px;
-}
-.features .container .section-title .btn-yellow:hover {
-  background-color: #f4e4bc;
 }
 .features .container .grid-features {
   display: flex;
@@ -696,7 +683,7 @@ header .container .menu .main-menu .btn-yellow {
 .about-company .container .left-img img {
   display: none;
 }
-@media (min-width: 650px) {
+@media (min-width: 576px) {
   .about-company .container .left-img img {
     height: 615px;
     max-width: 500px;
@@ -712,7 +699,7 @@ header .container .menu .main-menu .btn-yellow {
   max-width: 400px;
   display: none;
 }
-@media (min-width: 650px) {
+@media (min-width: 576px) {
   .about-company .container .left-img .informative-text {
     display: block;
     width: 340px;
@@ -744,7 +731,7 @@ header .container .menu .main-menu .btn-yellow {
   width: fit-content;
   padding: 15px;
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .about-company .container .right {
     padding: 0;
     text-align: left;
@@ -771,18 +758,18 @@ header .container .menu .main-menu .btn-yellow {
   margin: auto;
   margin-top: 120px;
 }
-@media (min-width: 425px) {
+@media (min-width: 576px) {
   .about-company .container .right .about-btn {
     flex-direction: row;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   .about-company .container .right .about-btn {
     align-items: center;
     justify-content: left;
   }
 }
-@media (min-width: 1500px) {
+@media (min-width: 1400px) {
   .about-company .container .right .about-btn {
     margin: 0;
     margin-top: 70px;
@@ -797,6 +784,15 @@ header .container .menu .main-menu .btn-yellow {
 }
 .about-company .container .right .about-btn a:hover {
   color: #bebebe;
+}
+.about-company .container .right .about-btn .round-btn {
+  background-color: transparent;
+  color: #191919;
+  transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
+}
+.about-company .container .right .about-btn .round-btn:hover {
+  background-color: #191919;
+  color: #DAD9D3;
 }
 @media (min-width: 1400px) {
   .about-company .container .section-title h2 {
@@ -831,7 +827,7 @@ header .container .menu .main-menu .btn-yellow {
   flex-direction: column;
   align-items: center;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-services .container {
     align-items: unset;
   }
@@ -839,7 +835,7 @@ header .container .menu .main-menu .btn-yellow {
 .our-services .container h2 {
   font-size: 28px;
 }
-@media (min-width: 650px) {
+@media (min-width: 576px) {
   .our-services .container h2 {
     font-size: 45px;
   }
@@ -850,7 +846,7 @@ header .container .menu .main-menu .btn-yellow {
   flex-direction: column;
   gap: 20px;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-services .container .boxes {
     flex-direction: row;
   }
@@ -863,7 +859,7 @@ header .container .menu .main-menu .btn-yellow {
   flex-shrink: 0;
   flex-grow: 0;
 }
-@media (min-width: 1600px) {
+@media (min-width: 1400px) {
   .our-services .container .boxes .box {
     margin-right: 20px;
     height: 310px;
@@ -881,23 +877,19 @@ header .container .menu .main-menu .btn-yellow {
   font-family: "inter", "sans-serif";
   font-size: 16px;
 }
-.our-services .container .boxes .box .round-button {
-  background-color: #191919;
-  color: #DAD9D3;
+.our-services .container .boxes .box .round-btn {
   position: absolute;
   bottom: 40px;
   right: 30px;
-  width: 55px;
-  height: 55px;
-}
-.our-services .container .boxes .box .round-button:hover {
-  background-color: #e3e3e3;
-  color: #191919;
 }
 .our-services .container .boxes .box .active-btn {
   background-color: #ffffff;
   color: #191919;
   border: none;
+}
+.our-services .container .boxes .box .active-btn:hover {
+  background-color: #191919;
+  color: #DAD9D3;
 }
 .our-services .container .boxes .active-box {
   background-color: #F9D783;
