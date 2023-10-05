@@ -27,7 +27,7 @@ body {
   color: #191919;
   font-weight: 700;
 }
-@media (min-width: 650px) {
+@media (min-width: 576px) {
   .section-title h2 {
     font-size: 45px;
   }
@@ -241,7 +241,7 @@ header .container .menu .main-menu {
   justify-content: space-around;
   align-items: center;
 }
-@media (min-width: 1000px) {
+@media (min-width: 992px) {
   header .container .menu .main-menu {
     justify-content: space-between;
   }
@@ -556,14 +556,14 @@ header .container .menu .main-menu .btn-yellow {
   width: max-content;
   margin: auto;
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .brands .container .img-brands img {
     padding: 25px;
     margin-top: 30px;
     margin-bottom: 30px;
   }
 }
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .brands .container .img-brands {
     display: flex;
     justify-content: center;
@@ -1004,7 +1004,7 @@ header .container .menu .main-menu .btn-yellow {
   grid-template-columns: 1fr;
   grid-template-areas: "icon1" "argument1" "icon2" "argument2" "icon3" "argument3" "icon4" "argument4";
 }
-@media (min-width: 500px) {
+@media (min-width: 576px) {
   .why-choose-us .container .left .why {
     display: grid;
     grid-template-columns: max-content max-content;
@@ -1056,7 +1056,7 @@ header .container .menu .main-menu .btn-yellow {
   font-weight: 700;
   text-align: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 576px) {
   .why-choose-us .container .left .why .argument h3 {
     text-align: left;
   }
@@ -1065,12 +1065,12 @@ header .container .menu .main-menu .btn-yellow {
   font-size: 0.8em;
   text-align: center;
 }
-@media (min-width: 500px) {
+@media (min-width: 576px) {
   .why-choose-us .container .left .why .argument p {
     text-align: left;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   .why-choose-us .container .left .why .argument p {
     font-size: 1em;
   }
@@ -1223,25 +1223,12 @@ header .container .menu .main-menu .btn-yellow {
   padding-bottom: 90px;
 }
 .our-team .container .upper .button-team .btn-outline {
-  height: 50px;
-  border-radius: 50px;
-  font-weight: 400;
-  font-size: 16px;
   margin-top: 35px;
 }
-@media (min-width: 500px) {
-  .our-team .container .upper .button-team .btn-outline {
-    width: 400px;
-  }
-}
-@media (min-width: 1300px) {
+@media (min-width: 1400px) {
   .our-team .container .upper .button-team .btn-outline {
     width: 200px;
-    height: 50px;
   }
-}
-.our-team .container .upper .button-team .btn-outline i {
-  margin-left: 10px;
 }
 .our-team .container .images-team {
   display: flex;
@@ -1647,13 +1634,13 @@ footer .position-line-img .background-lines {
     bottom: 81px;
   }
 }
-@media (min-width: 500px) {
+@media (min-width: 576px) {
   footer .position-line-img {
     margin: 15px;
     display: block;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 992px) {
   footer .position-line-img {
     margin: 0px;
   }
@@ -1662,7 +1649,7 @@ footer .container {
   padding: 30px;
   padding-bottom: 0px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   footer .container {
     padding: 70px 0;
     padding-bottom: 0px;
@@ -1675,7 +1662,7 @@ footer .container .upper-pt {
   gap: 30px;
   text-align: center;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   footer .container .upper-pt {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
@@ -1697,7 +1684,7 @@ footer .container .upper-pt .logo {
   grid-area: logo;
   margin-right: 0px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   footer .container .upper-pt .logo {
     margin-right: 40px;
     text-align: left;
@@ -1706,7 +1693,7 @@ footer .container .upper-pt .logo {
 footer .container .upper-pt .logo p {
   margin-top: 0px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   footer .container .upper-pt .logo p {
     margin-right: 30px;
   }
@@ -1740,7 +1727,7 @@ footer .container .upper-pt .logo .about-us-text p {
 footer .container .upper-pt .informative-text {
   margin-right: 0px;
 }
-@media (min-width: 850px) {
+@media (min-width: 992px) {
   footer .container .upper-pt .informative-text {
     margin-right: 30px;
     text-align: left;
