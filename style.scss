@@ -83,7 +83,6 @@ body {
     font-size: 16px;
     transition: background-color 0.4s ease-in-out, color 0.4s ease-in-out;
 
-
     @media (min-width:576px) {
         width: 400px;
     }
@@ -135,6 +134,7 @@ body {
 }
 
 .btn-dark {
+    color: #ffffff;
     width: 200px;
     height: 50px;
     border: none;
@@ -1281,7 +1281,7 @@ header {
             h2 {
                 font-size: 28px;
 
-                @media (min-width: 650px) {
+                @media (min-width: 576px) {
                     font-size: 45px;
                 }
             }
@@ -1292,7 +1292,7 @@ header {
             grid-template-columns: 1fr;
             gap: 30px;
 
-            @media (min-width: 850px) {
+            @media (min-width: 992px) {
                 grid-template-columns: 1fr 1fr;
             }
 
@@ -1313,7 +1313,7 @@ header {
                     padding-bottom: 8px;
                     border-bottom: 1px solid #DAD9D3;
 
-                    @media (min-width:500px) {
+                    @media (min-width:576px) {
                         font-size: 22px;
                         padding-top: 35px;
                         padding-bottom: 16px;
@@ -1329,7 +1329,7 @@ header {
                     color: #191919;
                     text-decoration: none;
 
-                    @media (min-width:500px) {
+                    @media (min-width:576px) {
                         padding: 15px;
                     }
 
@@ -1348,20 +1348,10 @@ header {
 
         .btn-parent {
             .btn-dark {
-                color: white;
                 margin-top: 50px;
 
-                @media (min-width:350px) {
+                @media (min-width:576px) {
                     width: 250px;
-                }
-
-
-                &:hover {
-                    background-color: #535353;
-                }
-
-                i {
-                    margin-left: 10px;
                 }
 
             }
@@ -1459,7 +1449,7 @@ header {
                 #active-img {
                     width: 70vw;
 
-                    @media (min-width:1000px) {
+                    @media (min-width:992px) {
                         width: 40vw;
                     }
 
@@ -1475,7 +1465,7 @@ header {
                 #active-img2 {
                     width: 70vw;
 
-                    @media (min-width:1000px) {
+                    @media (min-width:992px) {
                         width: 40vw;
                     }
 
@@ -1503,7 +1493,7 @@ header {
         max-height: fit-content;
         margin: auto;
 
-        @media (min-width: 400px) {
+        @media (min-width: 576px) {
             padding: 0px 30px 100px 30px;
         }
 
@@ -1518,7 +1508,7 @@ header {
                 h2 {
                     font-size: 28px;
 
-                    @media (min-width: 1600px) {
+                    @media (min-width: 576px) {
                         font-size: 45px;
                     }
                 }
@@ -1530,7 +1520,7 @@ header {
                 align-items: center;
                 width: fit-content;
 
-                @media (min-width: 1300px) {
+                @media (min-width: 1400px) {
                     flex-direction: row;
                     justify-content: space-between;
                     padding: 20px;
@@ -1541,7 +1531,7 @@ header {
                     margin-top: 50px;
                     text-align: left;
 
-                    @media (min-width:1300px) {
+                    @media (min-width:1400px) {
                         width: auto;
                     }
 
@@ -1553,7 +1543,7 @@ header {
                         margin-bottom: 30px;
                         font-size: 12px;
 
-                        @media (min-width: 500px) {
+                        @media (min-width: 576px) {
                             padding-right: 50px;
                             font-size: 16px;
                         }
@@ -1572,7 +1562,7 @@ header {
                             margin-right: 10px;
                             display: none;
 
-                            @media (min-width:500px) {
+                            @media (min-width:576px) {
                                 display: block;
                             }
                         }
@@ -1586,7 +1576,7 @@ header {
                                 margin: 0;
                                 font-size: 16px;
 
-                                @media (min-width:450px) {
+                                @media (min-width:576px) {
                                     font-size: 22px;
                                 }
                             }
@@ -1594,7 +1584,7 @@ header {
                             .title {
                                 font-size: 14px;
 
-                                @media (min-width:450px) {
+                                @media (min-width:576px) {
                                     font-size: 16px;
                                 }
                             }
@@ -1615,16 +1605,8 @@ header {
             margin: auto;
             margin-bottom: 50px;
 
-            @media (min-width:500px) {
+            @media (min-width:576px) {
                 width: 180px;
-            }
-
-            &:hover {
-                background-color: #535353;
-            }
-
-            i {
-                margin-left: 10px;
             }
 
         }
@@ -1651,11 +1633,16 @@ header {
 
             .section-title {
                 margin-bottom: 0;
+                text-align: center;
+
+                @media (min-width:992px) {
+                    text-align: left;
+                }
 
                 h2 {
                     font-size: 28px;
 
-                    @media (min-width: 1600px) {
+                    @media (min-width: 576px) {
                         font-size: 45px;
                     }
                 }
@@ -1666,26 +1653,15 @@ header {
                 text-align: right;
 
                 .btn-outline {
-                    font-weight: 400;
                     margin-top: 35px;
 
-                    @media (min-width:500px) {
-                        max-width: 400px;
-                    }
-
-                    @media (min-width: 1300px) {
+                    @media (min-width: 1400px) {
                         width: 200px;
                         height: 50px;
                     }
-
-                    i {
-                        margin-left: 10px;
-                    }
-
                 }
             }
         }
-
 
         .show-articles {
             display: grid;
@@ -1713,7 +1689,7 @@ header {
                         display: none;
                         margin: auto;
 
-                        @media (min-width: 500px) {
+                        @media (min-width: 576px) {
                             display: block;
                         }
                     }
@@ -1724,16 +1700,11 @@ header {
                         top: 15px;
                         display: none;
 
-                        @media (min-width: 500px) {
+                        @media (min-width: 576px) {
                             display: block;
                         }
                     }
                 }
-
-
-
-
-
             }
         }
 
@@ -1750,7 +1721,7 @@ header {
     padding: 50px;
     align-items: center;
 
-    @media (min-width: 1600px) {
+    @media (min-width: 1400px) {
         padding: 90px;
     }
 
@@ -1774,9 +1745,7 @@ header {
         justify-content: center;
         align-items: center;
 
-        @media (min-width: 950px) {}
-
-        @media (min-width:1600px) {
+        @media (min-width:1400px) {
             justify-content: space-between;
             flex-direction: row;
         }
@@ -1798,26 +1767,16 @@ header {
             .btn-yellow {
                 margin-top: 15px;
 
-                @media (min-width:800px) {
-                    max-width: 350px;
+                @media (min-width:576px) {
                     margin-top: 0;
                 }
 
-                @media (min-width: 1300px) {
+                @media (min-width: 1400px) {
                     width: 200px;
                     height: 50px;
-
                     margin-left: 15px;
                 }
 
-                i {
-                    margin-left: 10px;
-                }
-
-                &:hover {
-                    background-color: #ffffff;
-                    color: #191919;
-                }
             }
 
         }
@@ -1827,14 +1786,14 @@ header {
         text-align: center;
         padding: 0px;
 
-        @media (min-width: 1600px) {
+        @media (min-width: 1400px) {
             text-align: left;
         }
 
         h2 {
             font-size: 28px;
 
-            @media (min-width: 1600px) {
+            @media (min-width: 576px) {
                 font-size: 45px;
             }
 
