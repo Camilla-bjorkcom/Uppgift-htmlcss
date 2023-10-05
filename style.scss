@@ -64,6 +64,7 @@ body {
     width: 50px;
     height: 50px;
     background-color: transparent;
+    transition: background-color 0.2s ease-in-out;
 
     &:hover {
         background-color: #191919;
@@ -81,14 +82,14 @@ body {
     border-radius: 50px;
     font-weight: 500;
     font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
 
 
-
-    @media (min-width:500px) {
+    @media (min-width:576px) {
         width: 400px;
     }
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
         width: 300px;
         height: 50px;
         border: none;
@@ -111,12 +112,13 @@ body {
     border-radius: 50px;
     font-weight: 400;
     font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
 
-    @media (min-width:500px) {
+    @media (min-width:576px) {
         width: 400px;
     }
 
-    @media (min-width: 1500px) {
+    @media (min-width: 1400px) {
         width: 200px;
         height: 50px;
     }
@@ -126,8 +128,8 @@ body {
     }
 
     &:hover {
-        background-color: #e3e3e3;
-        color: #191919;
+        background-color: #424242;
+        color: #e8e8e8;
     }
 
 }
@@ -139,6 +141,7 @@ body {
     border-radius: 50px;
     font-weight: 400;
     font-size: 16px;
+    transition: background-color 0.2s ease-in-out;
 
     @media (min-width:650px) {
         width: 400px;
@@ -446,14 +449,7 @@ header {
 
         .form-wrapper {
 
-
             #form {
-                // display: flex;
-                // flex-direction: column;
-                // margin: 0 auto;
-                // align-items: center;
-
-
                 label {
                     display: block;
                     padding: 5px 0;
@@ -613,11 +609,6 @@ header {
 
                     i {
                         margin-left: 10px;
-                    }
-
-                    &:hover {
-                        background-color: #e3e3e3;
-                        color: #191919;
                     }
 
                 }
@@ -952,7 +943,6 @@ header {
         }
     }
 }
-
 
 .our-services {
     background-color: #F0EFE9;
@@ -1429,11 +1419,6 @@ header {
                         margin-left: 10px;
                     }
 
-                    &:hover {
-                        background-color: #e3e3e3;
-                        color: #191919;
-                    }
-
                 }
             }
         }
@@ -1691,11 +1676,6 @@ header {
 
                     i {
                         margin-left: 10px;
-                    }
-
-                    &:hover {
-                        background-color: #e3e3e3;
-                        color: #191919;
                     }
 
                 }
