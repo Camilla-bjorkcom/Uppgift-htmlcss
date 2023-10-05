@@ -346,7 +346,7 @@ header .container .menu .main-menu .btn-yellow:hover {
     padding: 50px;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 768px) {
   .contact-info .container .flex-box .contact-box {
     -moz-column-gap: normal;
          column-gap: normal;

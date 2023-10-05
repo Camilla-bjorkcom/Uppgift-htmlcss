@@ -372,7 +372,8 @@ header {
                 display: grid;
                 grid-template-columns: auto fit-content;
                 grid-template-rows: auto fit-content;
-                grid-template-areas: "icon headline"
+                grid-template-areas: 
+                    "icon headline"
                     "icon information";
                 align-items: start;
                 position: relative;
@@ -383,7 +384,7 @@ header {
                     padding: 50px;
                 }
 
-                @media (min-width:1200px) {
+                @media (min-width:768px) {
                     column-gap: normal;
                     width: 420px;
                     padding: 50px;
