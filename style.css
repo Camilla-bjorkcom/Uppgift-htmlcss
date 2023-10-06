@@ -160,6 +160,27 @@ body {
   text-align: center;
 }
 
+.carousel-dot {
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 25px;
+}
+.carousel-dot .dot {
+  color: rgba(109, 109, 109, 0.5098039216);
+  font-size: 90px;
+  border-radius: 100;
+}
+.carousel-dot .active {
+  color: #191919;
+}
+.carousel-dot:hover {
+  color: #F0D082;
+}
+
 header {
   background-color: #F0EFE9;
   padding-top: 12px;
@@ -578,6 +599,8 @@ header .container .menu .main-menu .btn-yellow {
 
 .features .container {
   border: 1.5px solid #DAD9D3;
+  padding: 0;
+  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   .features .container {
@@ -609,6 +632,11 @@ header .container .menu .main-menu .btn-yellow {
 .features .container .section-title h2 {
   text-align: center;
   font-size: 28px;
+}
+@media (min-width: 576px) {
+  .features .container .section-title h2 {
+    font-size: 45px;
+  }
 }
 @media (min-width: 1200px) {
   .features .container .section-title h2 {
@@ -644,6 +672,12 @@ header .container .menu .main-menu .btn-yellow {
 .features .container .grid-features .informative-text {
   margin: auto;
   margin-bottom: 50px;
+  padding: 0 30px;
+}
+@media (min-width: 992px) {
+  .features .container .grid-features .informative-text {
+    padding: 0;
+  }
 }
 .features .container .grid-features .informative-text i {
   text-align: left;
@@ -1213,7 +1247,7 @@ header .container .menu .main-menu .btn-yellow {
 .our-team .container .upper .section-title h2 {
   font-size: 28px;
 }
-@media (min-width: 1400px) {
+@media (min-width: 576px) {
   .our-team .container .upper .section-title h2 {
     font-size: 45px;
   }
@@ -1288,10 +1322,6 @@ header .container .menu .main-menu .btn-yellow {
     width: 100%;
   }
 }
-.our-team .container .dots {
-  padding-top: 50px;
-  text-align: center;
-}
 
 .testimonial {
   background-color: #F0D082;
@@ -1303,11 +1333,7 @@ header .container .menu .main-menu .btn-yellow {
   max-height: -moz-fit-content;
   max-height: fit-content;
   margin: auto;
-}
-@media (min-width: 576px) {
-  .testimonial .white-box {
-    padding: 0px 30px 100px 30px;
-  }
+  padding: 0px 30px 100px 30px;
 }
 .testimonial .white-box .container {
   display: flex;

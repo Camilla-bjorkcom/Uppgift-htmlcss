@@ -57,7 +57,6 @@ body {
     }
 }
 
-
 .round-btn {
     background-color: #191919;
     color: #DAD9D3;
@@ -170,6 +169,29 @@ body {
 
 .btn-parent {
     text-align: center;
+}
+
+.carousel-dot {
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding-bottom: 25px;
+
+    .dot {
+        color: #6d6d6d82;
+        font-size: 90px;
+        border-radius: 100;
+    }
+
+    .active {
+        color: #191919;
+    }
+
+    &:hover {
+        color: #F0D082;
+    }
 }
 
 header {
@@ -682,6 +704,8 @@ header {
 .features {
     .container {
         border: 1.5px solid #DAD9D3;
+        padding: 0;
+        margin: 0 auto;
 
         @media (min-width: 1200px) {
             display: flex;
@@ -711,6 +735,10 @@ header {
             h2 {
                 text-align: center;
                 font-size: 28px;
+
+                @media (min-width: 576px) {
+                    font-size: 45px;
+                }
 
                 @media (min-width: 1200px) {
                     text-align: left;
@@ -747,6 +775,11 @@ header {
             .informative-text {
                 margin: auto;
                 margin-bottom: 50px;
+                padding: 0 30px;
+
+                @media (min-width:992px) {
+                    padding: 0;
+                }
 
                 i {
                     text-align: left;
@@ -956,6 +989,7 @@ header {
 
         .title {
             text-align: center;
+
             @media (min-width:1600px) {
                 text-align: left;
             }
@@ -1383,7 +1417,7 @@ header {
                 h2 {
                     font-size: 28px;
 
-                    @media (min-width: 1400px) {
+                    @media (min-width: 576px) {
                         font-size: 45px;
                     }
                 }
@@ -1464,10 +1498,27 @@ header {
             }
         }
 
-        .dots {
-            padding-top: 50px;
-            text-align: center;
-        }
+        // .dots {
+        //     width: fit-content;
+        //     display: flex;
+        //     justify-content: space-between;
+        //     align-items: center;
+        //     margin: 0 auto;
+        //     padding-bottom: 50px;
+
+
+        //     .dot {
+        //         width: min-content;
+        //         height: min-content;
+        //         color: #6d6d6d82;
+        //         font-size: 90px;
+        //         border-radius: 100;
+        //     }
+
+        //     .active {
+        //         color: #191919;
+        //     }
+        // }
     }
 }
 
@@ -1480,10 +1531,7 @@ header {
         max-width: 1700px;
         max-height: fit-content;
         margin: auto;
-
-        @media (min-width: 576px) {
-            padding: 0px 30px 100px 30px;
-        }
+        padding: 0px 30px 100px 30px;
 
         .container {
             display: flex;
