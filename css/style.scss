@@ -688,7 +688,6 @@ header {
 .features {
     .container {
         border: 1.5px solid #DAD9D3;
-        padding: 0;
         margin: 0 auto;
 
         @media (min-width: 1200px) {
@@ -700,12 +699,14 @@ header {
             display: flex;
             justify-content: center;
             flex-direction: column;
+            align-items: center;
 
             @media (min-width: 1200px) {
                 display: inline-block;
                 text-align: left;
                 padding-left: 50px;
                 margin-right: 50px;
+                align-items: start;
             }
 
             p {
@@ -719,18 +720,26 @@ header {
             h2 {
                 text-align: center;
                 font-size: 28px;
+                margin: 0 auto;
+                padding: 40px;
 
                 @media (min-width: 576px) {
                     font-size: 45px;
+                    max-width: 50%;
+                    padding: 0px;
                 }
+
 
                 @media (min-width: 1200px) {
                     text-align: left;
+                    max-width: 80%;
+                    margin: 0;
+                    padding: 0px;
                 }
             }
 
             .btn-yellow {
-                margin: auto;
+                margin: 0 auto;
                 margin-top: 25px;
 
                 @media (min-width: 1400px) {

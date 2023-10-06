@@ -611,7 +611,6 @@ header .container .menu .main-menu .btn-yellow {
 
 .features .container {
   border: 1.5px solid #DAD9D3;
-  padding: 0;
   margin: 0 auto;
 }
 @media (min-width: 1200px) {
@@ -624,6 +623,7 @@ header .container .menu .main-menu .btn-yellow {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  align-items: center;
 }
 @media (min-width: 1200px) {
   .features .container .section-title {
@@ -631,6 +631,7 @@ header .container .menu .main-menu .btn-yellow {
     text-align: left;
     padding-left: 50px;
     margin-right: 50px;
+    align-items: start;
   }
 }
 .features .container .section-title p {
@@ -644,19 +645,26 @@ header .container .menu .main-menu .btn-yellow {
 .features .container .section-title h2 {
   text-align: center;
   font-size: 28px;
+  margin: 0 auto;
+  padding: 40px;
 }
 @media (min-width: 576px) {
   .features .container .section-title h2 {
     font-size: 45px;
+    max-width: 50%;
+    padding: 0px;
   }
 }
 @media (min-width: 1200px) {
   .features .container .section-title h2 {
     text-align: left;
+    max-width: 80%;
+    margin: 0;
+    padding: 0px;
   }
 }
 .features .container .section-title .btn-yellow {
-  margin: auto;
+  margin: 0 auto;
   margin-top: 25px;
 }
 @media (min-width: 1400px) {
