@@ -855,16 +855,9 @@ header {
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             width: fit-content;
             padding: 15px;
-
-            @media (min-width:992px) {
-                padding: 0;
-                text-align: left;
-                align-items: left;
-                justify-content: left;
-            }
-
 
             @media (min-width: 1400px) {
                 margin-top: 0px;
@@ -875,16 +868,16 @@ header {
 
 
             .about-btn {
+                max-width: fit-content;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
                 gap: 15px;
-                width: fit-content;
                 margin: auto;
                 margin-top: 120px;
 
-                @media (min-width:576px) {
+                @media (min-width:768px) {
                     flex-direction: row;
                 }
 
@@ -925,21 +918,26 @@ header {
         }
 
         .section-title {
+           
+            text-align: center;
             h2 {
+                max-width: 80%;
                 @media (min-width: 1400px) {
-                    padding-right: 120px;
                     margin-top: 20px;
+                    text-align: left;
                 }
             }
 
 
             p {
+                max-width: 80%;
                 opacity: 70%;
 
                 @media (min-width: 1400px) {
-                    padding-right: 50px;
+
                     margin-top: 10px;
                     margin-bottom: 0;
+                    text-align: left;
                 }
             }
 
@@ -1539,10 +1537,11 @@ header {
 
                 .customer {
                     margin-top: 50px;
-                    text-align: left;
+                    text-align: center;
 
                     @media (min-width:1400px) {
                         width: auto;
+                        text-align: left;
                     }
 
                     img {
@@ -1554,8 +1553,15 @@ header {
                         font-size: 12px;
 
                         @media (min-width: 576px) {
-                            padding-right: 50px;
+                            max-width: 80%;
                             font-size: 16px;
+                            margin: 0 auto;
+                            margin-bottom: 30px;
+                        }
+
+                        @media (min-width:1400px) {
+                            margin: 0;
+                            margin-bottom: 30px;
                         }
                     }
 
@@ -1565,7 +1571,12 @@ header {
                         grid-template-areas:
                             "img text";
 
-                        justify-content: left;
+                        align-items: center;
+                        justify-content: center;
+
+                        @media (min-width:1400px) {
+                            justify-content: left;
+                        }
 
                         .testimonial-img {
                             grid-area: img;
@@ -1579,6 +1590,7 @@ header {
 
                         .grid-text {
                             grid-area: text;
+
 
                             h3 {
                                 margin: 0;
@@ -1690,11 +1702,19 @@ header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                text-align: center;
+
+                @media (min-width:1600px) {
+                    align-items: start;
+                }
+
+                p {
+                    margin-top: 15px;
+                }
 
                 .img-and-date {
                     position: relative;
                     width: fit-content;
-
 
                     .img-news {
                         display: none;
