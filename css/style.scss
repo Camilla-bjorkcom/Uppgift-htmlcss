@@ -1042,7 +1042,15 @@ header {
                 background-color: #FFFFFF;
                 position: relative;
                 padding: 40px;
-                width: fit-content;
+                max-width: 70vw;
+
+                @media (min-width: 576px){
+                max-width: 70%;
+                }
+
+                @media (min-width:1400px) {
+                    max-width: 40vw;
+                }
 
                 @media (min-width:1600px) {
                     margin-right: 20px;
